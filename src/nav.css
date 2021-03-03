@@ -1,0 +1,199 @@
+.navbar1 {
+  background-color: rgba(46, 46, 46, 0.596);
+  height: 60px;
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+}
+
+.navlogo {
+  position: absolute;
+  z-index: 0;
+  height: 35px;
+  width: 40px;
+  top: 0.8rem;
+  opacity: 0.8;
+  left: 1.5rem;
+}
+
+.slog {
+  position: absolute;
+  z-index: 0;
+  top: 1rem;
+  left: 60px;
+  color: rgba(255, 255, 255, 0.822);
+  font-size: 18px;
+  font-family: ubuntu;
+  letter-spacing: 2px;
+  padding: 3px 0px 0px 3px;
+  font-style: italic;
+}
+
+.menu {
+  position: absolute;
+  z-index: 2;
+  right: 1%;
+  top: 1.2rem;
+  width: 40px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.menu_line {
+  position: absolute;
+  width: 30px;
+  height: 3px;
+  top: 0.6rem;
+  right: 1rem;
+  background-color: white;
+  transition: all 0.5s ease-in-out;
+  border-radius: 10px;
+}
+
+.menu_line::before {
+  content: '';
+  position: absolute;
+  width: 30px;
+  height: 3px;
+  top: -0.7rem;
+  right: 0;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.menu_line::after {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 3px;
+  top: 0.7rem;
+  right: 0;
+  background-color: white;
+  left: 0px;
+  border-radius: 10px;
+}
+
+.menu_line.open {
+  transform: rotate(360deg);
+  background: transparent;
+}
+
+.menu_line.open::before {
+  transform: rotate(45deg) translate(5px, 8px);
+}
+
+.menu_line.open::after {
+  transform: rotate(-45deg) translate(8px, -11px);
+  width: 30px;
+}
+
+.tognav {
+  background-color: transparent;
+  position: fixed;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  opacity: 0.0;
+  transform: translateX(-100vw);
+  transition: 0.7s;
+  transition-delay: 0.1s;
+}
+
+.tognav.open {
+  transform: translateX(0vw);
+  opacity: 1;
+  transition: 0.7s;
+  transition-delay: 0.5s;
+}
+
+.nav1 {
+  background-color: black;
+  height: 50%;
+  width: 100%;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  overflow: hidden;
+  transform: translateY(-100%);
+  transition: all 0.5s ease-in-out;
+  transition-delay: 0.2s;
+}
+
+.nav1.open {
+  transform: translateY(0);
+}
+
+.nav2 {
+  background-color: black;
+  height: 50%;
+  width: 50%;
+  position: fixed;
+  width: 100%;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  overflow: hidden;
+  transform: translateY(100%);
+  transition: all 0.5s ease-in-out;
+  transition-delay: 0.2s;
+}
+
+.nav2.open {
+  transform: translateY(0);
+}
+
+.nav1img {
+  position: fixed;
+  right: 0;
+  top: 0;
+  height: 100%;
+  opacity: 0.0;
+  transition: 2s;
+}
+
+.nav2img {
+  position: fixed;
+  right: 0;
+  top: 0;
+  height: 100%;
+  opacity: 0.0;
+  transition: 2s;
+}
+
+.nav {
+  position: fixed;
+  top: 15%;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.nav_item {
+  margin-top: 1%;
+  color: white;
+  font-size: 70px;
+  background-position: center;
+  list-style: none;
+  opacity: 0.7;
+  cursor: pointer;
+  transition: 0.5s;
+  font-weight: 1000;
+  font-family: ubuntu !important;
+}
+
+.nav_item.active {
+  color: #0099ff;
+}
+
+.nav_item:hover {
+  color: #0099ff;
+  transition: 0.5s;
+  margin-left: 2%;
+}
+/*# sourceMappingURL=nav.css.map */

@@ -1,0 +1,8 @@
+.scrol::-webkit-scrollbar{
+    position: absolute;
+    z-index: 5;
+}
+div{
+    scroll-behavior: smooth;
+    scrollbar-color: red;
+}
