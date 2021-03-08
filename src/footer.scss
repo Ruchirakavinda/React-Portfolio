@@ -1,13 +1,17 @@
+@import './config.scss';
+
 .footer
 {
     position: fixed;
     z-index: 0 ;
     bottom: 0;
-    height: 50px;
+    height: 25px;
     width: 100%;
-    background-color: rgba(43, 43, 43, 0);
+    background-image: linear-gradient(to left , rgb(0, 0, 0) 10%, rgbargb(0, 0, 0));
     display: flex;
     flex-flow: column wrap;
+    background-color: rgba(46, 46, 46, 0.596);
+    box-shadow: 0px -10px 10px rgba(0, 0, 0, 0.2);
     
 }
 .social-icons {
@@ -15,10 +19,7 @@
     flex-flow: column wrap;
     position: absolute;
     bottom: 0.5rem;
-    left: 1rem;
-    
-
- 
+    left: 1rem; 
   }
   .social
   {
@@ -31,7 +32,7 @@
   .social:hover
   {
       text-decoration: none;
-      color: rgb(0, 153, 255);
+      color:$blue;
       margin-right: 1rem;
       opacity: 1;
   }
@@ -41,7 +42,8 @@
       color:white;
       position: fixed;
       right: 2.2rem;
-      bottom: 1rem;
+      bottom: 0rem;
+      font-size: 15px;
   }
 
   @media screen and (max-width: 490px)
@@ -65,3 +67,4 @@
         left: 1rem;
     }
   }
+  

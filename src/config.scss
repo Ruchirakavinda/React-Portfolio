@@ -1,1 +1,4 @@
-$blue: rgb(196, 0, 0);
+$blue: rgba(0, 153, 255, 0.767);
+@mixin trans {
+    transition: 0.5s ease-in-out;
+}

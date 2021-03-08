@@ -1,34 +1,122 @@
+@import './config.scss';
+
 .main
 {
-    background: linear-gradient(to right ,rgba(0, 0, 0, 0.692),rgba(0, 0, 0, 0)), url('../src/img/my.jpg') center top;
+    background: linear-gradient(to right ,rgba(0, 0, 0, 0.397)30%,rgba(0, 97, 161, 0.521)100%), url('../src/img/my.jpg') center top;
     background-size: cover;
     width: 100%;
     background-attachment: fixed;
-    overflow: auto;
     position: absolute;
-    
-
+    bottom: 0;
+    top: 0;
+    overflow: hidden;
+    padding: 0% 10% 0% 10%;
 }
-.homeMain
+.home
 {
-    background-color: rgba(0, 0, 255, 0);
-    height: 520vh;
+    width: 100%;
+    text-align: center ;
+    padding-top: 18%;
+}
+.name
+{
+    font-size: 80px;
+    font-family: Ubuntu;
+    font-weight: 700;
+    color: $blue;
+    border-radius: 20px;
+    display: inline-block;
+
+}
+.lname
+{
+    font-weight: 100;
+    color:rgb(255, 255, 255);
+}
+.skill
+{
+    color: white;
+    font-size: 25px;
+    font-weight: 400;
+    padding-top: 50px;
+    padding-left: 50px;
+    display: inline-block;
+    text-align: left;
+}
+.hr1{
+    
+    background-color: rgba(255, 255, 255, 0.719);
+    width: 400vh;
+    height: 4px;
+    border-radius: 20px;
+    margin-left: -50vh;
+}
+.info
+{
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    padding-top: 10px;
+}
+.iam
+{
+    color: white;
+    font-size: 45px;
+    font-weight: 400;
+}
+.cv
+{
+    color: white;
+    background-color: $blue;
+    width: 200px;
+    padding: 10px 15px 10px 15px;
+    border-radius: 25px;
+    border: 2px solid $blue;
+    font-weight: 500;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.719);
+    transition: 0.3s;
+
+    &:hover{
+    color: $blue;
+    background-color:rgba(255, 255, 255, 0.836);
+    width: 200px;
+    padding: 10px 15px 10px 15px;
+    border-radius: 25px;
+    border: 2px solid white;
+    font-weight: 500;
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.719);
+    transition: 0.3s;
+        
+    }
 }
 
-::-webkit-scrollbar {
-    width: 10px;
-    height:10px;
+@media screen and (max-width: 400px)
+{
+.name
+{
+    font-size: 60px;
+    font-family: Ubuntu;
+    font-weight: 700;
+    color: $blue;
+    border-radius: 20px;
+    display: inline-block;
 
 }
-
-::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.8); 
-    border-radius: 6px;
-    background-color: grey;
+.main
+{
+  
+    overflow: auto;
+    position: relative;
+    height: 100%;
+    padding-bottom: 10%;
+    overflow-x: hidden;
+    
+    
 }
-
-::-webkit-scrollbar-thumb {
-    border-radius: 6px;
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.9); 
-    background-color: grey;
+.home
+{
+    width: 100%;
+    text-align: center ;
+    padding: 35% 0% 20% 0%;
+}
 }
