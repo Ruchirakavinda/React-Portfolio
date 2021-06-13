@@ -27,7 +27,7 @@
     left: 60px;
     color: rgba(255, 255, 255, 0.822);
     font-size: 18px;
-    font-family: ubuntu;
+    font-family: ubuntu !important;
     letter-spacing: 2px;
     padding: 3px 0px 0px 3px;
     font-style: italic;
@@ -213,7 +213,7 @@
         cursor: pointer;
         transition: 0.5s;
         font-weight: 1000;
-        font-family: ubuntu !important;
+        font-family: ubuntu;
 
 
         &.active

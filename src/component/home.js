@@ -7,11 +7,11 @@ function Home() {
         <div className='main'>
             <div className="container-fluid home">
                  <span className='iam'>I'm </span>
-                 <h1 className='name'>Ruchira <span className='lname'>Kavinda. </span></h1><p className='skill'>FrontEnd & BackEnd Developer <br/> UI / UX & Graphic Designer</p>
+                 <h1 className='name'>Ruchira <span className='lname'>Kavinda. </span></h1><p className='skill'>Interested In Full Stack Developing <br/> UI / UX & Graphic Designing</p>
 
                  <hr className='hr1' />
 
-                 <p className='info'>Undergraduate Of Management Information Systems At NSBM Green University Town.</p><br/>
+                 <p className='info'>Management Information Systems Undergraduate (Special) At NSBM Green University Town, Sri Lanka.</p><br/>
 
                  <a href='#'><div className='cv mx-auto'>Download CV</div></a>
                  
