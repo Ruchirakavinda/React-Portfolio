@@ -71,7 +71,6 @@
     width: 200px;
     padding: 10px 15px 10px 15px;
     border-radius: 25px;
-    border: 2px solid $blue;
     font-weight: 500;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.719);
     transition: 0.3s;
@@ -82,7 +81,6 @@
     width: 200px;
     padding: 10px 15px 10px 15px;
     border-radius: 25px;
-    border: 2px solid white;
     font-weight: 500;
     box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.719);
     transition: 0.3s;
@@ -95,7 +93,7 @@
 .name
 {
     font-size: 60px;
-    font-family: Ubuntu;
+    font-family:ubuntu !important;
     font-weight: 700;
     color: $blue;
     border-radius: 20px;
