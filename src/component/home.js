@@ -11,7 +11,7 @@ function Home() {
 
                  <hr className='hr1' />
 
-                 <p className='info'>Management Information Systems Undergraduate (Special) At NSBM Green University Town, Sri Lanka.</p><br/>
+                 {/* <p className='info'>Management Information Systems Undergraduate (Special) At NSBM Green University Town, Sri Lanka.</p><br/> */}
 
                  <a href='#'><div className='cv mx-auto'>Download CV</div></a>
                  
