@@ -19,7 +19,7 @@ function Nav() {
           <div className='menu' onClick={togmenu} id='menu1'>
             <span className='menu_line' id='lines'></span>
           </div>
-          <p className='menufont'>Menu</p>
+          <p className='menufont'onClick={togmenu}>Menu</p>
         
         <nav className='tognav' id='tog1'>
         
