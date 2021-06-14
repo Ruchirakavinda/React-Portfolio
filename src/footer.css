@@ -4,7 +4,6 @@
   bottom: 0;
   height: 25px;
   width: 100%;
-  background-image: linear-gradient(to left, black 10%, rgbargb(0, 0, 0));
   display: flex;
   flex-flow: column wrap;
   background-color: rgba(46, 46, 46, 0.596);

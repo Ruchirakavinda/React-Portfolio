@@ -10,14 +10,17 @@ import { Link } from 'react-router-dom';
 function Nav() {
   return (
     <header>
-      <div className='navbar1' style={{boxShadow:'5px 5px 15px rgba(0, 0, 0, 0.503)'}}>
+      <div className='navbar1' >
         <Link to='/'>
           <img src={logo} alt='Nav bar logo' className='navlogo'/>
           <span className='slog'>uchira Kavinda.  </span>
         </Link>
-        <div className='menu' onClick={togmenu} id='menu1'>
-          <span className='menu_line' id='lines'></span>
-        </div>
+        
+          <div className='menu' onClick={togmenu} id='menu1'>
+            <span className='menu_line' id='lines'></span>
+          </div>
+          <p className='menufont'>Menu</p>
+        
         <nav className='tognav' id='tog1'>
         
           <ul className='nav'>
