@@ -194,8 +194,9 @@
     
 }
 .nav{
-    position: fixed;
-    top: 15%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
     width: 100%;
     text-align: center;
     display: flex;
@@ -237,8 +238,9 @@
     }
     .nav{
         
-        position: fixed;
-        top: 25%;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
         width: 100%;
         text-align: center;
         display: flex;
