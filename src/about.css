@@ -4,4 +4,40 @@
   width: 100%;
   background-attachment: fixed;
   height: auto;
+}
+
+.aboutrow {
+  height: auto;
+}
+
+.myimg {
+  width: 40vh;
+  height: 40vh;
+  border-radius: 50%;
+  margin-top: 40%;
+}
+
+.aboutname {
+  margin-top: 50%;
+  color: rgba(0, 153, 255, 0.767);
+  font-size: 45px;
+  font-weight: 600;
+}
+
+.aboutcol1 {
+  font-family: ubuntu;
+  text-align: right;
+}
+
+.aboutcol2 {
+  text-align: center;
+}
+
+.aboutcol3 {
+  text-align: left;
+}
+
+.aboutcont {
+  margin-top: 40px;
+  color: white;
 }/*# sourceMappingURL=about.css.map */

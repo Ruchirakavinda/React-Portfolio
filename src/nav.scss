@@ -227,6 +227,7 @@
         transition: 0.5s;
         font-weight: 1000;
         font-family: ubuntu;
+        text-decoration: none;
 
 
         &.active
@@ -238,6 +239,7 @@
             color: $blue;
             transition: 0.5s;
             margin-left: 2%;
+            text-decoration: none;
         }
     }
 }
