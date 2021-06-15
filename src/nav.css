@@ -1,7 +1,6 @@
 .navbar1 {
   background-color: rgba(46, 46, 46, 0);
-  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0);
-  height: 35px;
+  height: 25px;
   position: fixed;
   z-index: 2;
   width: 100%;
@@ -87,7 +86,7 @@
   right: 2.8rem;
   top: 1.5rem;
   font-size: 13px;
-  color: white;
+  color: #0099ff;
   font-weight: 500;
   cursor: pointer;
 }

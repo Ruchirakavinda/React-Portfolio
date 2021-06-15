@@ -2,11 +2,11 @@
   position: fixed;
   z-index: 0;
   bottom: 0;
-  height: 25px;
+  height: 20px;
   width: 100%;
   display: flex;
   flex-flow: column wrap;
-  background-color: rgba(46, 46, 46, 0.596);
+  background-color: #0067ac;
   box-shadow: 0px -10px 10px rgba(0, 0, 0, 0.2);
 }
 
