@@ -10,6 +10,7 @@
     width: 100%;
     background-attachment: fixed;
     height: auto;
+    padding: 0% 10% 15% 10%;
 }
 .aboutrow
 {
@@ -20,33 +21,66 @@
     width:40vh;
     height: 40vh;
     border-radius: 50%;
-    margin-top: 40%;
+    margin-top: 0%;
     
 }
 .aboutname
 {
-    margin-top: 50%;
+    margin-top: 8%;
     color: $blue;
     font-size: 45px;
     font-weight: 600;
 }
 .aboutcol1
 {
-font-family: ubuntu;
 text-align: right;
-
-
+margin-bottom: 5%;
 }
 .aboutcol2
 {
 text-align: center;
+margin-bottom: 5%;
 }
 .aboutcol3
 {
 text-align: left;
+margin-bottom: 5%;
 }
 .aboutcont
 {
     margin-top: 40px;
     color: white;
+}
+.aboutrow1
+{
+ padding-top: 200px;
+}
+.crd1
+{
+    width: 50%;
+    background-color: rgb(43, 43, 43);
+    border-bottom: 7px solid $blue;
+    padding: 10px;
+    margin-top: 5%;
+}
+.crdtopic
+{
+    color: $blue;
+    font-size: 25px;
+    font-weight: 600;
+}
+@media screen and (max-width: 992px)
+{
+.crd1
+{
+    width: 80%;
+    background-color: rgb(43, 43, 43);
+    border-bottom: 7px solid $blue;
+    padding: 10px;
+    margin-top: 5%;
+}
+}
+
+@media screen and (max-width: 500px)
+{
 }
