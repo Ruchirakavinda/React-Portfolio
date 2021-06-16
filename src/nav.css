@@ -9,24 +9,24 @@
 .navlogo {
   position: absolute;
   z-index: 0;
-  height: 35px;
-  width: 40px;
+  height: 45px;
+  width: 45px;
   top: 1.5rem;
   opacity: 0.8;
   left: 2rem;
+  border-radius: 50%;
 }
 
 .slog {
   position: absolute;
   z-index: 0;
   top: 2rem;
-  left: 4.5rem;
-  color: rgba(255, 255, 255, 0.822);
-  font-size: 18px;
+  left: 5rem;
+  color: rgba(255, 255, 255, 0.753);
+  font-size: 15px;
   font-family: ubuntu !important;
-  letter-spacing: 2px;
   padding: 3px 0px 0px 3px;
-  font-style: italic;
+  font-weight: 500;
 }
 
 .menu {
@@ -86,7 +86,7 @@
   right: 2.8rem;
   top: 1.5rem;
   font-size: 13px;
-  color: #0099ff;
+  color: #24a7ff;
   font-weight: 500;
   cursor: pointer;
 }

@@ -5,15 +5,19 @@ import Gohome from "../main.js";
 import nav1 from '../img/nav1.jpg';
 import nav2 from '../img/nav2.jpg';
 import logo from '../img/logo.png';
+import myimg from '../img/myimg.jpg';
 import { Link } from 'react-router-dom';
 
 function Nav() {
   return (
     <header>
       <div className='navbar1' >
+        <Link to='/about'>
+          <img src={myimg} alt='Nav bar logo' className='navlogo'/>
+        </Link>
+        
         <Link to='/'>
-          <img src={logo} alt='Nav bar logo' className='navlogo'/>
-          <span className='slog'>uchira Kavinda.  </span>
+          <span className='slog'>Ruchira Kavinda </span>
         </Link>
         
           <div className='menu' onClick={togmenu} id='menu1'>

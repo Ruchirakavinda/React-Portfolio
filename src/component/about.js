@@ -23,7 +23,7 @@ function About() {
                             <p className='aboutcont'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc hendrerit, ipsum condimentum ultricies vehicula, massa lorem tincidunt quam, at tincidunt libero enim ac leo. Maecenas eu nulla ornare, faucibus magna sit amet, ornare dolor. </p> 
 
                 </div>
-                <hr/>
+               
                 <div className='container-fluid'>
                     <div className='row'>
                         <div className='crd1 mx-auto'>
