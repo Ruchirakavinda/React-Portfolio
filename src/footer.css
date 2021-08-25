@@ -6,7 +6,7 @@
   width: 100%;
   display: flex;
   flex-flow: column wrap;
-  background-color: #0067ac;
+  background-color: #0086df;
   box-shadow: 0px -10px 10px rgba(0, 0, 0, 0.2);
 }
 
@@ -37,7 +37,7 @@
   position: fixed;
   right: 2.2rem;
   bottom: 0rem;
-  font-size: 15px;
+  font-size: 13px;
 }
 
 @media screen and (max-width: 490px) {
