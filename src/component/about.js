@@ -1,5 +1,5 @@
 import React from 'react';
-import '../about.css';
+import '../css/about.css';
 import myimg from '../img/myimg.jpg';
 import { BrowserRouter as Router } from 'react-router-dom';
 

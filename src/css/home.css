@@ -1,0 +1,222 @@
+.main {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.6) 30%, rgba(0, 0, 0, 0.6) 100%), url("../img/my.jpg") center top;
+  background-size: cover;
+  width: 100%;
+  height: auto;
+  padding: 10% 0% 15% 0%;
+  position: relative;
+  top: 0;
+  bottom: 0;
+}
+
+.home {
+  width: 100%;
+  text-align: center;
+  padding: 7% 0%;
+}
+
+.name {
+  font-size: 80px;
+  font-family: Ubuntu;
+  font-weight: 700;
+  color: rgba(0, 153, 255, 0.767);
+  border-radius: 20px;
+  display: inline-block;
+}
+
+.lname {
+  font-weight: 100;
+  color: white;
+}
+
+.skill {
+  color: white;
+  font-size: 25px;
+  font-weight: 400;
+  padding-left: 50px;
+  display: inline-block;
+  text-align: left;
+}
+
+.hr1 {
+  background-color: white;
+  height: 5px;
+  border-radius: 20px;
+  width: 70%;
+  margin-left: 15%;
+}
+
+.info {
+  color: white;
+  font-size: 20px;
+  font-weight: 400;
+  padding-top: 10px;
+}
+
+.iam {
+  color: white;
+  font-size: 45px;
+  font-weight: 400;
+}
+
+.cv {
+  color: white;
+  background-color: rgba(0, 153, 255, 0.767);
+  width: 200px;
+  padding: 10px 15px 10px 15px;
+  border-radius: 25px;
+  font-weight: 500;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.719);
+  transition: 0.3s;
+  margin-top: 40px;
+}
+.cv:hover {
+  color: black;
+  background-color: rgba(255, 255, 255, 0.836);
+  width: 200px;
+  padding: 10px 15px 10px 15px;
+  border-radius: 25px;
+  font-weight: 500;
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.719);
+  transition: 0.3s;
+}
+
+.bracket1 {
+  color: white;
+  font-size: 300px;
+  text-align: center;
+  margin-left: 30%;
+  opacity: 0.2;
+  font-weight: 400;
+}
+
+.bracket2 {
+  color: white;
+  font-size: 300px;
+  text-align: center;
+  margin-right: 40%;
+  margin-left: -50px;
+  opacity: 0.2;
+  font-weight: 400;
+}
+
+.main2 {
+  background-color: black;
+  height: 100px;
+}
+
+@media screen and (max-width: 1380px) {
+  .skill {
+    color: white;
+    font-size: 25px;
+    font-weight: 400;
+    padding-left: 0px;
+    display: inline-block;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 992px) {
+  .skill {
+    color: white;
+    font-size: 25px;
+    font-weight: 400;
+    padding-left: 0px;
+    display: inline-block;
+    text-align: center;
+  }
+
+  .bracket1 {
+    color: white;
+    font-size: 300px;
+    text-align: center;
+    margin-left: 30%;
+    opacity: 0.2;
+    font-weight: 400;
+    display: none;
+  }
+
+  .bracket2 {
+    color: white;
+    font-size: 300px;
+    text-align: center;
+    margin-right: 40%;
+    margin-left: -50px;
+    opacity: 0.2;
+    font-weight: 400;
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .home {
+    width: 100%;
+    text-align: center;
+    padding: 7% 7%;
+  }
+}
+@media screen and (max-width: 712px) {
+  .main {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.6) 30%, rgba(0, 0, 0, 0.6) 100%), url("../img/my.jpg") center top;
+    background-size: cover;
+    width: 100%;
+    height: auto;
+    padding: 20% 0% 15% 0%;
+    position: relative;
+    top: 0;
+    bottom: 0;
+  }
+
+  .name {
+    font-size: 50px;
+    font-family: Ubuntu;
+    font-weight: 700;
+    color: rgba(0, 153, 255, 0.767);
+    border-radius: 20px;
+    display: inline-block;
+  }
+
+  .lname {
+    font-weight: 100;
+    color: white;
+  }
+
+  .skill {
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    padding-left: 0px;
+    display: inline-block;
+    text-align: center;
+  }
+
+  .iam {
+    color: white;
+    font-size: 25px;
+    font-weight: 400;
+  }
+}
+@media screen and (max-width: 400px) {
+  .name {
+    font-size: 40px;
+    font-family: ubuntu !important;
+    font-weight: 700;
+    color: rgba(0, 153, 255, 0.767);
+    border-radius: 20px;
+    display: inline-block;
+  }
+
+  .main {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.74) 30%, rgba(0, 0, 0, 0.651) 100%), url("../img/my.jpg") center top;
+    background-size: cover;
+    width: 100%;
+    background-attachment: fixed;
+    position: relative;
+    height: auto;
+    padding: 0% 0% 0% 0%;
+  }
+
+  .home {
+    width: 100%;
+    text-align: center;
+    padding: 35% 0% 20% 0%;
+  }
+}
