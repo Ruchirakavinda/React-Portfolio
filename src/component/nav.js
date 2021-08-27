@@ -1,5 +1,5 @@
 import React from 'react';
-import '../nav.css';
+import '../css/nav.css';
 import togmenu from '../main.js';
 import Gohome from "../main.js";
 import nav1 from '../img/nav1.jpg';
