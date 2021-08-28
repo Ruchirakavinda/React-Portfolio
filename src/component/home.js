@@ -5,7 +5,7 @@ import { MDBCol, MDBContainer, MDBRow } from 'mdb-react-ui-kit';
 
 function Home() {
     return(
-        <>
+       <div>
         <MDBContainer fluid className="main">
         <MDBRow>
             <MDBCol lg="1" sm="0">
@@ -34,7 +34,7 @@ function Home() {
          <MDBContainer fluid className="main2">
 
          </MDBContainer>
-         </>
+         </div>
     );
 }
 

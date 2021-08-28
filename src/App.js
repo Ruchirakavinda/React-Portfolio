@@ -5,7 +5,7 @@ import About from "./component/about";
 import Project from "./component/project";
 import Contact from './component/contact';
 
-import {BrowserRouter as Router, Switch,Route} from 'react-router-dom'
+import {BrowserRouter as Router, Switch,Route, Redirect} from 'react-router-dom'
 
 
 import './App.css';
@@ -14,16 +14,37 @@ import './App.css';
 function App() {
   return (
     <Router>
+
       <div>
+
         <Nav/>
+
           <Switch>
-            <Route path='/' exact component={Home}/>
-            <Route path='/about' component={About}/>
-            <Route path='/project' component={Project}/>
-            <Route path='/contact' component={Contact}/>
+
+            <Route path='/' exact>
+              <Home/>
+            </Route>
+
+            <Route path='/about'>
+              <About/>
+            </Route>
+            
+            <Route path='/project'>
+              <Project/>
+            </Route>
+
+            <Route path='/contact'>
+              <Contact/>
+            </Route>
+
+            <Redirect to="/" />
+
           </Switch>
+
         <Footer/>
+
       </div>
+
     </Router>
   );
 }
