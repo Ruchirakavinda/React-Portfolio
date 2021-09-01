@@ -6,19 +6,17 @@ import nav1 from '../img/nav1.jpg';
 import nav2 from '../img/nav2.jpg';
 import logo from '../img/logo.png';
 import myimg from '../img/myimg.jpg';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 
 function Nav() {
   return (
     <header>
       <div className='navbar1' >
-        <Link to='/about'>
+        <NavLink to='/ '>
           <img src={myimg} alt='Nav bar logo' className='navlogo'/>
-        </Link>
+        </NavLink>
         
-        <Link to='/'>
-          <span className='slog'>Ruchira Kavinda </span>
-        </Link>
+       
         
           <div className='menu' onClick={togmenu} id='menu1'>
             <span className='menu_line' id='lines'></span>
@@ -28,18 +26,18 @@ function Nav() {
         <nav className='tognav' id='tog1'>
         
           <ul className='nav'>
-            <Link to='/' className='nav_item active' onClick={togmenu}>
+            <NavLink to='/ ' className='nav_item ' activeClassName="nav_item2" onClick={togmenu}>
               <li id='item1'>Home</li>
-            </Link>
-            <Link to='/about' className='nav_item' onClick={togmenu}>
+            </NavLink>
+            <NavLink to='/about' className='nav_item' activeClassName="nav_item2" onClick={togmenu}>
               <li id='item2'> About Me</li>
-            </Link>
-            <Link to='/project' className='nav_item' onClick={togmenu}>
+            </NavLink>
+            <NavLink to='/project' className='nav_item' activeClassName="nav_item2" onClick={togmenu}>
               <li id='item3'> My Projects</li>
-            </Link>
-            <Link to='/contact' className='nav_item' onClick={togmenu}>
+            </NavLink>
+            <NavLink to='/contact' className='nav_item' activeClassName="nav_item2" onClick={togmenu}>
               <li id='item4'> Contact Me</li>
-            </Link>
+            </NavLink>
           </ul>
         </nav>
         <div className='nav1' id='nav1'>

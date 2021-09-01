@@ -1,10 +1,11 @@
 .main {
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.6) 30%, rgba(0, 0, 0, 0.6) 100%), url("../img/my.jpg") center top;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.6) 30%, rgba(0, 0, 0, 0.6) 100%), url("../img/my3.jpg") center top;
   background-size: cover;
   width: 100%;
   height: auto;
-  padding: 10% 0% 15% 0%;
+  padding: 12% 10% 15% 10%;
   position: relative;
+  background-attachment: fixed;
   top: 0;
   bottom: 0;
 }
@@ -105,7 +106,7 @@
   height: 100px;
 }
 
-@media screen and (max-width: 1380px) {
+@media screen and (max-width: 1389px) {
   .skill {
     color: white;
     font-size: 25px;
@@ -152,10 +153,21 @@
     text-align: center;
     padding: 7% 7%;
   }
+
+  .main {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.6) 30%, rgba(0, 0, 0, 0.6) 100%), url("../img/my3.jpg") center top;
+    background-size: cover;
+    width: 100%;
+    height: auto;
+    padding: 20% 0% 15% 0%;
+    position: relative;
+    top: 0;
+    bottom: 0;
+  }
 }
 @media screen and (max-width: 712px) {
   .main {
-    background: linear-gradient(to right, rgba(0, 0, 0, 0.6) 30%, rgba(0, 0, 0, 0.6) 100%), url("../img/my.jpg") center top;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.6) 30%, rgba(0, 0, 0, 0.6) 100%), url("../img/my3.jpg") center top;
     background-size: cover;
     width: 100%;
     height: auto;
@@ -205,7 +217,7 @@
   }
 
   .main {
-    background: linear-gradient(to right, rgba(0, 0, 0, 0.74) 30%, rgba(0, 0, 0, 0.651) 100%), url("../img/my.jpg") center top;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.74) 30%, rgba(0, 0, 0, 0.651) 100%), url("../img/my3.jpg") center top;
     background-size: cover;
     width: 100%;
     background-attachment: fixed;

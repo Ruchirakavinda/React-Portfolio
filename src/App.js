@@ -21,7 +21,7 @@ function App() {
 
           <Switch>
 
-            <Route path='/' exact>
+            <Route path='/ ' exact>
               <Home/>
             </Route>
 
@@ -37,7 +37,7 @@ function App() {
               <Contact/>
             </Route>
 
-            <Redirect to="/" />
+            <Redirect to="/ " />
 
           </Switch>
 
