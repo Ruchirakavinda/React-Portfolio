@@ -1,6 +1,6 @@
 # React-Portfolio
 ## Used technologies
-- scss / scc
+- SCSS / CSS
 - MDBoostrap
 ## Installed packages
 - mdb-react-ui-kit
