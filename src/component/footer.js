@@ -13,7 +13,7 @@ function Footer() {
         <div className="social-icons ">
         <MDBLink to ="#!">
          <span className='social'><i className="fab fa-github fa-2x" ></i></span> 
-        </MDBLink><br/>
+        </MDBLink>
         <MDBLink to ="#!" >
           <span className='social'><i className="fab fa-linkedin fa-2x"></i></span> 
         </MDBLink>

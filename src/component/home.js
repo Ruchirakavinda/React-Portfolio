@@ -9,7 +9,7 @@ function Home() {
         <MDBContainer fluid className="main">
         <MDBRow>
             <MDBCol lg="1" sm="0">
-                <h1 className="bracket1">&#123;</h1>
+                {/* <h1 className="bracket1">&#123;</h1> */}
             </MDBCol>
             <MDBCol  lg="10" sm="12">
             <div className=" home">
@@ -25,7 +25,7 @@ function Home() {
             </div>
             </MDBCol>
             <MDBCol  lg="1" sm="0">
-            <h1 className="bracket2">&#125;</h1>
+            {/* <h1 className="bracket2">&#125;</h1> */}
             </MDBCol>
            
          </MDBRow>

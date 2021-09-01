@@ -1,4 +1,4 @@
-@import '../src/config.scss';
+@import './config.scss';
 
 .navbar1
 {
@@ -229,18 +229,30 @@
         font-family: ubuntu;
         text-decoration: none;
 
+        
 
-        &.active
-        {
-            color: $blue;
-           
-        }
+      
+     
         &:hover{
             color: $blue;
             transition: 0.5s;
             margin-left: 2%;
             text-decoration: none;
         }
+    }
+
+    &_item2{
+        margin-top: 1%;
+        color: $blue;
+        font-size: 70px;
+        background-position: center;
+        list-style: none;
+        opacity: 0.7;
+        cursor: pointer;
+        transition: 0.5s;
+        font-weight: 1000;
+        font-family: ubuntu;
+        text-decoration: none;
     }
 }
 
@@ -260,4 +272,96 @@
         display: flex;
         flex-flow: column wrap;
     }
+
+
+    
+.menu
+{
+    position: absolute;
+    z-index: 2;
+    right: 1rem;
+    top: 3rem;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    padding-left: 50px;
+ 
+
+    &_line
+    {
+        position: absolute;
+        width: 30px;
+        height: 3px;
+        top: 0.6rem;
+        right: 1rem;
+        background-color: white;
+        transition: all 0.5s ease-in-out;
+        border-radius: 10px;
+
+        &::before
+        {
+            content: '';
+            position: absolute;
+            width: 30px;
+            height: 3px;
+            top: -0.7rem;
+            right: 0;
+            background-color: white; 
+            border-radius: 10px;
+        }
+        &::after
+        {
+            content: '';
+            position: absolute;
+            width: 20px;
+            height: 3px;
+            top: 0.7rem;
+            right: 0;
+            background-color: white; 
+            left: 0px;
+            border-radius: 10px;
+            
+        }
+        &.open
+        {
+            transform: rotate(360deg);
+            background: transparent;
+
+            &::before{
+                transform: rotate(45deg) translate(5px, 8px);
+                
+                
+            }
+
+            &::after
+            {
+                transform: rotate(-45deg) translate(8px, -11px);
+                width: 30px;
+                
+            }
+        }
+    }
+}
+
+.menufont
+{
+    position:absolute;
+    right:1.8rem;
+    top:1.5rem;
+    font-size:13px;
+    color:rgb(36, 167, 255);
+    font-weight:500;
+    cursor: pointer;
+}
+.navlogo
+{
+  position: absolute;
+  z-index: 0;
+  height: 45px;
+  width:45px;
+  top: 1.5rem;
+  opacity: 0.8;
+  left: 1.5rem;
+  border-radius: 50%;
+}
 }
