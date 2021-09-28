@@ -132,7 +132,7 @@
 @media screen and (max-width : 992px){
     .skill
 {
-    color: white; 
+    color: white;
     font-size: 25px;
     font-weight: 400;
     padding-left: 0px;
@@ -162,13 +162,27 @@
     
 }
 
+
+
+
 }
+
+
+@media screen and (max-width : 900px){
+    .home
+    {
+        width: 100%;
+        text-align: center ;
+        padding: 0% 7%;
+    }
+}
+
 @media screen and (max-width : 768px){
     .home
     {
         width: 100%;
         text-align: center ;
-        padding: 0% 0%;
+        padding: 0% 7%;
     }
     .main
     {
