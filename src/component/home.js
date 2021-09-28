@@ -8,10 +8,10 @@ function Home() {
        <div>
         <MDBContainer fluid className="main">
         <MDBRow>
-            <MDBCol lg="1" sm="0">
-                {/* <h1 className="bracket1">&#123;</h1> */}
-            </MDBCol>
-            <MDBCol  lg="10" sm="12">
+            {/* <MDBCol lg="1" sm="0">
+               <h1 className="bracket1">&#123;</h1> 
+            </MDBCol> */}
+            <MDBCol  size="12" >
             <div className=" home">
                  <span className='iam'>Hi !,  I'm </span>
                  <h1 className='name'>Ruchira <span className='lname'>Kavinda</span></h1><p className='skill'>Interested In Full Stack Developing,<br/> UI / UX & Graphic Designing</p>
@@ -24,9 +24,9 @@ function Home() {
                  
             </div>
             </MDBCol>
-            <MDBCol  lg="1" sm="0">
-            {/* <h1 className="bracket2">&#125;</h1> */}
-            </MDBCol>
+            {/* <MDBCol  lg="1" sm="0">
+                 <h1 className="bracket2">&#125;</h1> 
+            </MDBCol> */}
            
          </MDBRow>
          </MDBContainer>
