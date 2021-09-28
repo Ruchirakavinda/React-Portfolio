@@ -3,7 +3,7 @@
   background-size: cover;
   width: 100%;
   height: auto;
-  padding: 12% 10% 15% 10%;
+  padding: 5% 10% 15% 10%;
   position: relative;
   background-attachment: fixed;
   top: 0;
@@ -13,7 +13,7 @@
 .home {
   width: 100%;
   text-align: center;
-  padding: 7% 0%;
+  padding: 1% 0%;
 }
 
 .name {
@@ -106,6 +106,13 @@
   height: 100px;
 }
 
+.logoimg {
+  width: 300px;
+  opacity: 0.7;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.733);
+  border-radius: 20px;
+}
+
 @media screen and (max-width: 1158px) {
   .skill {
     color: white;
@@ -151,14 +158,14 @@
   .home {
     width: 100%;
     text-align: center;
-    padding: 7% 0%;
+    padding: 2% 0%;
   }
 }
 @media screen and (max-width: 768px) {
   .home {
     width: 100%;
     text-align: center;
-    padding: 7% 0%;
+    padding: 2% 0%;
   }
 
   .main {
@@ -166,7 +173,7 @@
     background-size: cover;
     width: 100%;
     height: auto;
-    padding: 20% 10% 15% 10%;
+    padding: 10% 10% 15% 10%;
     position: relative;
     top: 0;
     bottom: 0;
@@ -178,7 +185,7 @@
     background-size: cover;
     width: 100%;
     height: auto;
-    padding: 20% 10% 15% 10%;
+    padding: 10% 10% 15% 10%;
     position: relative;
     top: 0;
     bottom: 0;
@@ -236,6 +243,13 @@
   .home {
     width: 100%;
     text-align: center;
-    padding: 35% 10% 20% 10%;
+    padding: 5% 10% 20% 10%;
+  }
+
+  .logoimg {
+    width: 200px;
+    opacity: 0.7;
+    box-shadow: 10px 10px 20px black;
+    border-radius: 20px;
   }
 }
