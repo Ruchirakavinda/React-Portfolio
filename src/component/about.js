@@ -1,7 +1,6 @@
 import React from 'react';
 import '../css/about.css';
 import myimg from '../img/myimg.jpg';
-import { BrowserRouter as Router } from 'react-router-dom';
 import { MDBContainer, MDBRow ,MDBCol } from 'mdb-react-ui-kit';
 
 
