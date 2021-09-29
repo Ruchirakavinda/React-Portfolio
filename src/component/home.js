@@ -23,7 +23,7 @@ function Home() {
 
                  {/* <p className='info'>Management Information Systems Undergraduate (Special) At NSBM Green University Town, Sri Lanka.</p><br/> */}
 
-                 <a href='#'><div className='cv mx-auto'>Download CV</div></a>
+                <button className='cv mx-auto'>Download CV</button>
                  
             </div>
             </MDBCol>
