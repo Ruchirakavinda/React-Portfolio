@@ -63,17 +63,19 @@
 .cv {
   color: white;
   background-color: rgba(0, 153, 255, 0.767);
+  border: 0px solid #0086df;
   width: 200px;
   padding: 10px 15px 10px 15px;
   border-radius: 25px;
   font-weight: 500;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.719);
   transition: 0.3s;
-  margin-top: 40px;
+  margin-top: 25px;
 }
 .cv:hover {
   color: black;
   background-color: rgba(255, 255, 255, 0.836);
+  border: 0px solid white;
   width: 200px;
   padding: 10px 15px 10px 15px;
   border-radius: 25px;
@@ -296,14 +298,39 @@
     border-radius: 20px;
   }
 
+  @-webkit-keyframes ShineAnimation {
+    from {
+      background-repeat: no-repeat;
+      background-image: -webkit-linear-gradient(top left, rgba(82, 82, 82, 0) 0%, rgba(255, 255, 255, 0) 45%, rgba(255, 255, 255, 0.15) 48%, rgba(255, 255, 255, 0.3) 50%, rgba(255, 255, 255, 0.15) 52%, rgba(255, 255, 255, 0) 57%, rgba(255, 255, 255, 0) 100%);
+      background-position: -250px -250px;
+      background-size: 600px 600px;
+    }
+    to {
+      background-repeat: no-repeat;
+      background-position: 50px 150px;
+    }
+  }
+
+  @keyframes ShineAnimation {
+    from {
+      background-repeat: no-repeat;
+      background-image: -webkit-linear-gradient(top left, rgba(82, 82, 82, 0) 0%, rgba(255, 255, 255, 0) 45%, rgba(255, 255, 255, 0.15) 48%, rgba(255, 255, 255, 0.3) 50%, rgba(255, 255, 255, 0.15) 52%, rgba(255, 255, 255, 0) 57%, rgba(255, 255, 255, 0) 100%);
+      background-position: -250px -250px;
+      background-size: 600px 600px;
+    }
+    to {
+      background-repeat: no-repeat;
+      background-position: 50px 150px;
+    }
+  }
   .shine {
     width: 150px;
     /*Make sure the animation is over the whole element*/
     border-radius: 20px;
     -webkit-animation-name: ShineAnimation;
             animation-name: ShineAnimation;
-    -webkit-animation-duration: 5s;
-            animation-duration: 5s;
+    -webkit-animation-duration: 8s;
+            animation-duration: 8s;
     -webkit-animation-iteration-count: infinite;
             animation-iteration-count: infinite;
     -webkit-animation-timing-function: cubic-bezier(0.12, 0.89, 0.98, 0.47);

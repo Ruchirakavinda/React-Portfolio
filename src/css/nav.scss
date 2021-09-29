@@ -113,9 +113,27 @@
     font-weight:500;
     cursor: pointer;
 }
+
+
+
+
+@keyframes ShineAnimation2{ 
+    from { 
+      background-repeat:no-repeat; 
+      color:-webkit-linear-gradient( top left, 
+                      rgba(82, 82, 82, 0) 0%, 
+                      rgba(255, 255, 255, 0.0) 45%, rgba(255, 255, 255, 0.150) 48%, 
+                      rgba(255, 255, 255, 0.300) 50%, rgba(255, 255, 255, 0.150) 52%, 
+                      rgba(255, 255, 255, 0.0) 57%, rgba(255, 255, 255, 0.0) 100% ); 
+      background-position:-950px -950px; background-size: 1200px 1200px } 
+    to { 
+      background-repeat:no-repeat; 
+      background-position:950px 1200px;
+    } 
+  }
 .tognav
 {
-    background: linear-gradient(to right ,rgba(0, 153, 255, 0)30%,rgba(0, 0, 0, 0)100%);
+    
     position: fixed;
     width: 100%;
     left: 0;
@@ -222,12 +240,24 @@
         font-size: 70px;
         background-position: center;
         list-style: none;
-        opacity: 0.7;
+        opacity: 0.8;
         cursor: pointer;
         transition: 0.5s;
         font-weight: 1000;
         font-family: ubuntu;
         text-decoration: none;
+
+        background: linear-gradient(to right, #FFF 20%, #FFF 40%, rgb(75, 183, 255) 60%, #FFF 90%);
+        background-size: 200% auto;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: shine 5s linear infinite;
+        @keyframes shine {
+            to {
+            background-position: 200% center;
+            }
+  }
 
         
 
@@ -237,7 +267,20 @@
             color: $blue;
             transition: 0.5s;
             margin-left: 2%;
+            opacity: 1;
             text-decoration: none;
+            background: linear-gradient(to right, #fff 20%, #fff 40%, #fff 50%, #fff 80%);
+            background-size: 200% auto;
+            background-clip: text;
+            -webkit-background-clip: text;
+            animation: shine 5s linear infinite;
+
+            @keyframes shine {
+                to {
+                background-position: 200% center;
+                }
+            }
+            
         }
     }
 
@@ -247,14 +290,29 @@
         font-size: 70px;
         background-position: center;
         list-style: none;
-        opacity: 0.7;
+        opacity: 1;
         cursor: pointer;
         transition: 0.5s;
         font-weight: 1000;
         font-family: ubuntu;
         text-decoration: none;
+        background: linear-gradient(to right, #fff 20%, #fff 40%, #fff 50%, #fff 80%);
+        background-size: 200% auto;
+        background-clip: text;
+        -webkit-background-clip: text;
+        animation: shine 5s linear infinite;
+
+        @keyframes shine {
+           to {
+            background-position: 200% center;
+            }
+        }
     }
 }
+
+
+
+
 
 @media screen and (max-width: 400px)
 {
@@ -365,3 +423,4 @@
   border-radius: 50%;
 }
 }
+
