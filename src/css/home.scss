@@ -6,7 +6,7 @@
     background-size: cover;
     width: 100%;
     height: auto;
-    padding: 5% 10% 15% 10%;
+    padding: 10% 10% 15% 10%;
     position: relative;
     background-attachment: fixed;
     top: 0;
@@ -117,11 +117,42 @@
 }
 
 .logoimg{
-    width: 300px;
+    width: 100%;
     opacity: 0.7;
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.733);
     border-radius: 20px;
 }
+
+
+
+
+
+@keyframes ShineAnimation{ 
+    from { 
+      background-repeat:no-repeat; 
+      background-image:-webkit-linear-gradient( top left, 
+                      rgba(82, 82, 82, 0) 0%, 
+                      rgba(255, 255, 255, 0.0) 45%, rgba(255, 255, 255, 0.150) 48%, 
+                      rgba(255, 255, 255, 0.300) 50%, rgba(255, 255, 255, 0.150) 52%, 
+                      rgba(255, 255, 255, 0.0) 57%, rgba(255, 255, 255, 0.0) 100% ); 
+      background-position:-250px -250px; background-size: 600px 600px } 
+    to { 
+      background-repeat:no-repeat; 
+      background-position:50px 200px;
+    } 
+  }
+.shine{
+    width:200px; /*Make sure the animation is over the whole element*/
+    border-radius: 20px;
+    animation-name: ShineAnimation; 
+    animation-duration: 5s; 
+    animation-iteration-count: infinite; 
+    animation-timing-function: cubic-bezier(.12,.89,.98,.47); 
+    animation-delay: 0s;
+}
+
+
+
 
 @media screen and (max-width : 1158px){
     .skill
@@ -196,7 +227,7 @@
         background-size: cover;
         width: 100%;
         height: auto;
-        padding: 10% 10% 15% 10%;
+        padding: 15% 10% 15% 10%;
         position: relative;
         background-attachment:scroll;
         top: 0;
@@ -213,7 +244,7 @@
     background-size: cover;
     width: 100%;
     height: auto;
-    padding: 10% 10% 15% 10%;
+    padding: 15% 10% 15% 10%;
     position: relative;
     background-attachment:scroll;
     top: 0;
@@ -273,7 +304,7 @@
     background-attachment:scroll;
     position:relative;
     height: auto;
-    padding: 20% 10% 15% 10%;
+    padding: 25% 10% 15% 10%;
     
 }
 .home
@@ -284,9 +315,18 @@
 }
 
 .logoimg{
-    width: 200px;
+    width: 100%;
     opacity: 0.7;
     box-shadow: 10px 10px 20px rgb(0, 0, 0);
     border-radius: 20px;
+}
+
+.shine{
+    width:150px; /*Make sure the animation is over the whole element*/
+    border-radius: 20px;
+    animation-name: ShineAnimation; 
+    animation-duration: 5s; 
+    animation-iteration-count: infinite; 
+    animation-timing-function: cubic-bezier(.12,.89,.98,.47); 
 }
 }
