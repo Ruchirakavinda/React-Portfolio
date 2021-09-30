@@ -1,6 +1,6 @@
 import React from 'react';
 import '../css/about.css';
-import myimg from '../img/myimg.jpg';
+import myimg from '../img/myimg4.png';
 import { MDBContainer, MDBRow ,MDBCol } from 'mdb-react-ui-kit';
 
 
@@ -20,7 +20,7 @@ function About() {
                     </MDBCol>
 
                     <MDBCol md='12' lg='4'  className='aboutcol3'>
-                        <h1 className='aboutname'>&#10100; CODER &#10101;</h1>
+                        <h1 className='aboutname'>DEVELOPER</h1>
                             <p className='aboutcont'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc hendrerit, ipsum condimentum ultricies vehicula, massa lorem tincidunt quam, at tincidunt libero enim ac leo. Maecenas eu nulla ornare, faucibus magna sit amet, ornare dolor. </p> 
                     </MDBCol>
                 </MDBRow>

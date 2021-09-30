@@ -4,7 +4,7 @@ import togmenu from '../main.js';
 import nav1 from '../img/nav1.jpg';
 import nav2 from '../img/nav2.jpg';
 
-import myimg from '../img/myimg.jpg';
+import myimg from '../img/myimg4.png';
 import {NavLink } from 'react-router-dom';
 
 function Nav() {
