@@ -1,8 +1,7 @@
-.scrol::-webkit-scrollbar{
-    position: absolute;
-    z-index: 5;
-}
-div{
-    scroll-behavior: smooth;
-    scrollbar-color: red;
+
+
+body{
+    font-family: 'Source Serif Pro', sans-serif ;
+                                                                                                                                        
+
 }

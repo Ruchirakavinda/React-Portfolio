@@ -1,7 +1,6 @@
 import React from 'react';
 import '../css/footer.css';
-import { BrowserRouter as Router } from 'react-router-dom';
-import { MDBContainer, MDBRow} from 'mdb-react-ui-kit';
+import { MDBContainer} from 'mdb-react-ui-kit';
 import { MDBLink } from 'mdbreact';
 
 

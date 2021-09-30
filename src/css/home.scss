@@ -6,7 +6,7 @@
     background-size: cover;
     width: 100%;
     height: auto;
-    padding: 10% 10% 15% 10%;
+    padding: 9% 10% 8% 10%;
     position: relative;
     background-attachment: fixed;
     top: 0;
@@ -21,7 +21,6 @@
 .name
 {
     font-size: 80px;
-    font-family: Ubuntu;
     font-weight: 700;
     color: $blue;
     border-radius: 20px;
@@ -229,7 +228,7 @@
         background-size: cover;
         width: 100%;
         height: auto;
-        padding: 15% 10% 15% 10%;
+        padding: 15% 10% 0% 10%;
         position: relative;
         background-attachment:scroll;
         top: 0;
@@ -246,7 +245,7 @@
     background-size: cover;
     width: 100%;
     height: auto;
-    padding: 15% 10% 15% 10%;
+    padding: 15% 10% 0% 10%;
     position: relative;
     background-attachment:scroll;
     top: 0;
@@ -255,7 +254,6 @@
 .name
 {
     font-size: 50px;
-    font-family: Ubuntu;
     font-weight: 700;
     color: $blue;
     border-radius: 20px;
@@ -290,7 +288,6 @@
 .name
 {
     font-size: 40px;
-    font-family:ubuntu !important;
     font-weight: 700;
     color: $blue;
     border-radius: 20px;
@@ -306,14 +303,14 @@
     background-attachment:scroll;
     position:relative;
     height: auto;
-    padding: 25% 10% 15% 10%;
+    padding: 25% 10% 0% 10%;
     
 }
 .home
 {
     width: 100%;
     text-align: center ;
-    padding: 5% 10% 20% 10%;
+    padding: 5% 10% 5% 10%;
 }
 
 .logoimg{

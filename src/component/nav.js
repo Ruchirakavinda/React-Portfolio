@@ -1,12 +1,11 @@
 import React from 'react';
 import '../css/nav.css';
 import togmenu from '../main.js';
-import Gohome from "../main.js";
 import nav1 from '../img/nav1.jpg';
 import nav2 from '../img/nav2.jpg';
-import logo from '../img/logo.png';
-import myimg from '../img/myimg.jpg';
-import { Link, NavLink } from 'react-router-dom';
+
+import myimg from '../img/myimg4.png';
+import {NavLink } from 'react-router-dom';
 
 function Nav() {
   return (

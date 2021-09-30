@@ -1,6 +1,5 @@
 import React from 'react';
 import '../css/home.css';
-import { BrowserRouter as Router } from 'react-router-dom';
 import { MDBCol, MDBContainer, MDBRow } from 'mdb-react-ui-kit';
 import logo from '../img/logo.png'
 
