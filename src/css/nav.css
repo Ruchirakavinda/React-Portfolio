@@ -37,6 +37,7 @@
   cursor: pointer;
   padding-left: 50px;
 }
+
 .menu_line {
   position: absolute;
   width: 30px;
@@ -44,11 +45,13 @@
   top: 0.6rem;
   right: 1rem;
   background-color: white;
+  -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
   border-radius: 10px;
 }
+
 .menu_line::before {
-  content: "";
+  content: '';
   position: absolute;
   width: 30px;
   height: 3px;
@@ -57,8 +60,9 @@
   background-color: white;
   border-radius: 10px;
 }
+
 .menu_line::after {
-  content: "";
+  content: '';
   position: absolute;
   width: 20px;
   height: 3px;
@@ -68,15 +72,21 @@
   left: 0px;
   border-radius: 10px;
 }
+
 .menu_line.open {
-  transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
   background: transparent;
 }
+
 .menu_line.open::before {
-  transform: rotate(45deg) translate(5px, 8px);
+  -webkit-transform: rotate(45deg) translate(5px, 8px);
+          transform: rotate(45deg) translate(5px, 8px);
 }
+
 .menu_line.open::after {
-  transform: rotate(-45deg) translate(8px, -11px);
+  -webkit-transform: rotate(-45deg) translate(8px, -11px);
+          transform: rotate(-45deg) translate(8px, -11px);
   width: 30px;
 }
 
@@ -98,16 +108,23 @@
   top: 0;
   right: 0;
   z-index: 1;
-  opacity: 0;
-  transform: translateX(-100vw);
+  opacity: 0.0;
+  -webkit-transform: translateX(-100vw);
+          transform: translateX(-100vw);
+  -webkit-transition: 0.7s;
   transition: 0.7s;
-  transition-delay: 0.1s;
+  -webkit-transition-delay: 0.1s;
+          transition-delay: 0.1s;
 }
+
 .tognav.open {
-  transform: translateX(0vw);
+  -webkit-transform: translateX(0vw);
+          transform: translateX(0vw);
   opacity: 1;
+  -webkit-transition: 0.7s;
   transition: 0.7s;
-  transition-delay: 0.5s;
+  -webkit-transition-delay: 0.5s;
+          transition-delay: 0.5s;
 }
 
 .nav1 {
@@ -120,12 +137,17 @@
   top: 0;
   bottom: 0;
   overflow: hidden;
-  transform: translateY(-100%);
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+  -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
-  transition-delay: 0.2s;
+  -webkit-transition-delay: 0.2s;
+          transition-delay: 0.2s;
 }
+
 .nav1.open {
-  transform: translateY(0);
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
 }
 
 .nav2 {
@@ -138,12 +160,17 @@
   left: 0;
   bottom: 0;
   overflow: hidden;
-  transform: translateY(100%);
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+  -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
-  transition-delay: 0.2s;
+  -webkit-transition-delay: 0.2s;
+          transition-delay: 0.2s;
 }
+
 .nav2.open {
-  transform: translateY(0);
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
 }
 
 .nav1img {
@@ -151,7 +178,8 @@
   right: 0;
   top: 0;
   height: 100%;
-  opacity: 0;
+  opacity: 0.0;
+  -webkit-transition: 2s;
   transition: 2s;
 }
 
@@ -160,19 +188,27 @@
   right: 0;
   top: 0;
   height: 100%;
-  opacity: 0;
+  opacity: 0.0;
+  -webkit-transition: 2s;
   transition: 2s;
 }
 
 .nav {
   position: absolute;
   top: 50%;
-  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
   width: 100%;
   text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-flow: column wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
 }
+
 .nav_item {
   margin-top: 1%;
   color: white;
@@ -181,17 +217,21 @@
   list-style: none;
   opacity: 0.7;
   cursor: pointer;
+  -webkit-transition: 0.5s;
   transition: 0.5s;
   font-weight: 1000;
   text-decoration: none;
 }
+
 .nav_item:hover {
   color: rgba(0, 153, 255, 0.767);
+  -webkit-transition: 0.5s;
   transition: 0.5s;
   margin-left: 2%;
   text-decoration: none;
   opacity: 0.9;
 }
+
 .nav_item2 {
   margin-top: 1%;
   color: rgba(0, 153, 255, 0.767);
@@ -199,6 +239,7 @@
   background-position: center;
   list-style: none;
   cursor: pointer;
+  -webkit-transition: 0.5s;
   transition: 0.5s;
   font-weight: 1000;
   text-decoration: none;
@@ -209,17 +250,21 @@
   .nav_item {
     font-size: 50px;
   }
-
   .nav {
     position: absolute;
     top: 50%;
-    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
     width: 100%;
     text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-flow: column wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
   }
-
   .menu {
     position: absolute;
     z-index: 2;
@@ -237,11 +282,12 @@
     top: 0.6rem;
     right: 1rem;
     background-color: white;
+    -webkit-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
     border-radius: 10px;
   }
   .menu_line::before {
-    content: "";
+    content: '';
     position: absolute;
     width: 30px;
     height: 3px;
@@ -251,7 +297,7 @@
     border-radius: 10px;
   }
   .menu_line::after {
-    content: "";
+    content: '';
     position: absolute;
     width: 20px;
     height: 3px;
@@ -262,17 +308,19 @@
     border-radius: 10px;
   }
   .menu_line.open {
-    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
     background: transparent;
   }
   .menu_line.open::before {
-    transform: rotate(45deg) translate(5px, 8px);
+    -webkit-transform: rotate(45deg) translate(5px, 8px);
+            transform: rotate(45deg) translate(5px, 8px);
   }
   .menu_line.open::after {
-    transform: rotate(-45deg) translate(8px, -11px);
+    -webkit-transform: rotate(-45deg) translate(8px, -11px);
+            transform: rotate(-45deg) translate(8px, -11px);
     width: 30px;
   }
-
   .menufont {
     position: absolute;
     right: 1.8rem;
@@ -282,7 +330,6 @@
     font-weight: 500;
     cursor: pointer;
   }
-
   .navlogo {
     position: absolute;
     z-index: 0;
@@ -294,3 +341,4 @@
     border-radius: 50%;
   }
 }
+/*# sourceMappingURL=nav.css.map */

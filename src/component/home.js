@@ -13,7 +13,9 @@ function Home() {
             </MDBCol> */}
             
             <MDBCol  size="12" style={{textAlign:'center', width:'100%'}} >
-            <div className="shine mx-auto"><img src={logo} className="logoimg"/></div>
+            {/* <div className="shine mx-auto">
+               <img src={logo} className="logoimg"/>
+               </div> */}
             <div className=" home">
                  <span className='iam'>Hi,  I'm </span>
                  <h1 className='name'>Ruchira <span className='lname'>Kavinda</span></h1><p className='skill'>Interested In Full Stack Developing,<br/> UI / UX & Graphic Designing</p>
