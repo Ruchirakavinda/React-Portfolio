@@ -6,7 +6,7 @@
     background-size: cover;
     width: 100%;
     height: auto;
-    padding: 9% 10% 8% 10%;
+    padding: 17% 10% 14% 10%;
     position: relative;
     background-attachment: fixed;
     top: 0;
@@ -63,6 +63,22 @@
     font-size: 45px;
     font-weight: 400;
 }
+
+@keyframes ShineAnimation02{ 
+    from { 
+      background-repeat:no-repeat; 
+      background-image:-webkit-linear-gradient( top left, 
+                      rgba(82, 82, 82, 0) 0%, 
+                      rgba(255, 255, 255, 0.0) 45%, rgba(255, 255, 255, 0.418) 48%, 
+                      rgba(255, 255, 255, 0.300) 50%, rgba(255, 255, 255, 0.150) 52%, 
+                      rgba(255, 255, 255, 0.0) 57%, rgba(255, 255, 255, 0.0) 100% ); 
+      background-position:-350px -450px; background-size: 700px 400px } 
+    to { 
+      background-repeat:no-repeat; 
+      background-position:100px 200px;
+    } 
+  }
+
 .cv
 {
     color: white;
@@ -75,16 +91,21 @@
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.719);
     transition: 0.3s;
     margin-top: 25px;
+    animation-name: ShineAnimation02; 
+    animation-duration: 4s; 
+    animation-iteration-count: infinite; 
+    animation-timing-function: cubic-bezier(.12,.89,.98,.47); 
+    animation-delay: 0s;
 
     &:hover{
     color: black;
     background-color:rgba(255, 255, 255, 0.836);
-    border: 0px solid rgb(255, 255, 255) ;
     width: 200px;
     padding: 10px 15px 10px 15px;
     border-radius: 25px;
     font-weight: 500;
-    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.719);
+    border: solid $blue 0px;
+    box-shadow: 0px 0px 20px $blue;
     transition: 0.3s;
         
     }
@@ -143,13 +164,16 @@
     } 
   }
 .shine{
-    width:200px; /*Make sure the animation is over the whole element*/
+    width:200px;
+    height: 200px; /*Make sure the animation is over the whole element*/
     border-radius: 20px;
     animation-name: ShineAnimation; 
     animation-duration: 5s; 
     animation-iteration-count: infinite; 
     animation-timing-function: cubic-bezier(.12,.89,.98,.47); 
     animation-delay: 0s;
+    border: solid $blue 1px;
+    box-shadow: 0px 0px 20px $blue;
 }
 
 
@@ -228,7 +252,7 @@
         background-size: cover;
         width: 100%;
         height: auto;
-        padding: 15% 10% 0% 10%;
+        padding: 20% 10% 5% 10%;
         position: relative;
         background-attachment:scroll;
         top: 0;
@@ -245,7 +269,7 @@
     background-size: cover;
     width: 100%;
     height: auto;
-    padding: 15% 10% 0% 10%;
+    padding: 20% 10% 5% 10%;
     position: relative;
     background-attachment:scroll;
     top: 0;
@@ -283,6 +307,24 @@
 }
 }
 
+@media screen and (max-width: 600px)
+{
+
+.main
+{
+  
+    background: linear-gradient(to right ,rgba(0, 0, 0, 0.74)30%,rgba(0, 0, 0, 0.651)100%), url('../img/my3.jpg') center top;
+    background-size: cover;
+    width: 100%;
+    background-attachment:scroll;
+    position:relative;
+    height: auto;
+    padding: 35% 10% 0% 10%;
+    
+}
+}
+
+
 @media screen and (max-width: 400px)
 {
 .name
@@ -303,7 +345,7 @@
     background-attachment:scroll;
     position:relative;
     height: auto;
-    padding: 25% 10% 0% 10%;
+    padding: 30% 10% 0% 10%;
     
 }
 .home

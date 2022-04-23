@@ -1,9 +1,10 @@
 .main {
+  background: -webkit-gradient(linear, left top, right top, color-stop(30%, rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url("../img/my3.jpg") center top;
   background: linear-gradient(to right, rgba(0, 0, 0, 0.6) 30%, rgba(0, 0, 0, 0.6) 100%), url("../img/my3.jpg") center top;
   background-size: cover;
   width: 100%;
   height: auto;
-  padding: 9% 10% 8% 10%;
+  padding: 17% 10% 14% 10%;
   position: relative;
   background-attachment: fixed;
   top: 0;
@@ -59,6 +60,32 @@
   font-weight: 400;
 }
 
+@-webkit-keyframes ShineAnimation02 {
+  from {
+    background-repeat: no-repeat;
+    background-image: -webkit-linear-gradient(top left, rgba(82, 82, 82, 0) 0%, rgba(255, 255, 255, 0) 45%, rgba(255, 255, 255, 0.418) 48%, rgba(255, 255, 255, 0.3) 50%, rgba(255, 255, 255, 0.15) 52%, rgba(255, 255, 255, 0) 57%, rgba(255, 255, 255, 0) 100%);
+    background-position: -350px -450px;
+    background-size: 700px 400px;
+  }
+  to {
+    background-repeat: no-repeat;
+    background-position: 100px 200px;
+  }
+}
+
+@keyframes ShineAnimation02 {
+  from {
+    background-repeat: no-repeat;
+    background-image: -webkit-linear-gradient(top left, rgba(82, 82, 82, 0) 0%, rgba(255, 255, 255, 0) 45%, rgba(255, 255, 255, 0.418) 48%, rgba(255, 255, 255, 0.3) 50%, rgba(255, 255, 255, 0.15) 52%, rgba(255, 255, 255, 0) 57%, rgba(255, 255, 255, 0) 100%);
+    background-position: -350px -450px;
+    background-size: 700px 400px;
+  }
+  to {
+    background-repeat: no-repeat;
+    background-position: 100px 200px;
+  }
+}
+
 .cv {
   color: white;
   background-color: rgba(0, 153, 255, 0.767);
@@ -67,19 +94,34 @@
   padding: 10px 15px 10px 15px;
   border-radius: 25px;
   font-weight: 500;
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.719);
+  -webkit-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.719);
+          box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.719);
+  -webkit-transition: 0.3s;
   transition: 0.3s;
   margin-top: 25px;
+  -webkit-animation-name: ShineAnimation02;
+          animation-name: ShineAnimation02;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: cubic-bezier(0.12, 0.89, 0.98, 0.47);
+          animation-timing-function: cubic-bezier(0.12, 0.89, 0.98, 0.47);
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
 }
+
 .cv:hover {
   color: black;
   background-color: rgba(255, 255, 255, 0.836);
-  border: 0px solid white;
   width: 200px;
   padding: 10px 15px 10px 15px;
   border-radius: 25px;
   font-weight: 500;
-  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.719);
+  border: solid rgba(0, 153, 255, 0.767) 0px;
+  -webkit-box-shadow: 0px 0px 20px rgba(0, 153, 255, 0.767);
+          box-shadow: 0px 0px 20px rgba(0, 153, 255, 0.767);
+  -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
@@ -110,7 +152,8 @@
 .logoimg {
   width: 100%;
   opacity: 0.5;
-  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.733);
+  -webkit-box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.733);
+          box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.733);
   border-radius: 20px;
 }
 
@@ -139,8 +182,10 @@
     background-position: 50px 200px;
   }
 }
+
 .shine {
   width: 200px;
+  height: 200px;
   /*Make sure the animation is over the whole element*/
   border-radius: 20px;
   -webkit-animation-name: ShineAnimation;
@@ -153,6 +198,9 @@
           animation-timing-function: cubic-bezier(0.12, 0.89, 0.98, 0.47);
   -webkit-animation-delay: 0s;
           animation-delay: 0s;
+  border: solid rgba(0, 153, 255, 0.767) 1px;
+  -webkit-box-shadow: 0px 0px 20px rgba(0, 153, 255, 0.767);
+          box-shadow: 0px 0px 20px rgba(0, 153, 255, 0.767);
 }
 
 @media screen and (max-width: 1158px) {
@@ -165,6 +213,7 @@
     text-align: center;
   }
 }
+
 @media screen and (max-width: 992px) {
   .skill {
     color: white;
@@ -174,7 +223,6 @@
     display: inline-block;
     text-align: center;
   }
-
   .bracket1 {
     color: white;
     font-size: 300px;
@@ -184,7 +232,6 @@
     font-weight: 400;
     display: none;
   }
-
   .bracket2 {
     color: white;
     font-size: 300px;
@@ -196,6 +243,7 @@
     display: none;
   }
 }
+
 @media screen and (max-width: 900px) {
   .home {
     width: 100%;
@@ -203,38 +251,40 @@
     padding: 2% 0%;
   }
 }
+
 @media screen and (max-width: 768px) {
   .home {
     width: 100%;
     text-align: center;
     padding: 2% 0%;
   }
-
   .main {
+    background: -webkit-gradient(linear, left top, right top, color-stop(30%, rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url("../img/my3.jpg") center top;
     background: linear-gradient(to right, rgba(0, 0, 0, 0.6) 30%, rgba(0, 0, 0, 0.6) 100%), url("../img/my3.jpg") center top;
     background-size: cover;
     width: 100%;
     height: auto;
-    padding: 15% 10% 0% 10%;
+    padding: 20% 10% 5% 10%;
     position: relative;
     background-attachment: scroll;
     top: 0;
     bottom: 0;
   }
 }
+
 @media screen and (max-width: 712px) {
   .main {
+    background: -webkit-gradient(linear, left top, right top, color-stop(30%, rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url("../img/my3.jpg") center top;
     background: linear-gradient(to right, rgba(0, 0, 0, 0.6) 30%, rgba(0, 0, 0, 0.6) 100%), url("../img/my3.jpg") center top;
     background-size: cover;
     width: 100%;
     height: auto;
-    padding: 15% 10% 0% 10%;
+    padding: 20% 10% 5% 10%;
     position: relative;
     background-attachment: scroll;
     top: 0;
     bottom: 0;
   }
-
   .name {
     font-size: 50px;
     font-weight: 700;
@@ -242,12 +292,10 @@
     border-radius: 20px;
     display: inline-block;
   }
-
   .lname {
     font-weight: 100;
     color: white;
   }
-
   .skill {
     color: white;
     font-size: 20px;
@@ -256,13 +304,26 @@
     display: inline-block;
     text-align: center;
   }
-
   .iam {
     color: white;
     font-size: 25px;
     font-weight: 400;
   }
 }
+
+@media screen and (max-width: 600px) {
+  .main {
+    background: -webkit-gradient(linear, left top, right top, color-stop(30%, rgba(0, 0, 0, 0.74)), to(rgba(0, 0, 0, 0.651))), url("../img/my3.jpg") center top;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.74) 30%, rgba(0, 0, 0, 0.651) 100%), url("../img/my3.jpg") center top;
+    background-size: cover;
+    width: 100%;
+    background-attachment: scroll;
+    position: relative;
+    height: auto;
+    padding: 35% 10% 0% 10%;
+  }
+}
+
 @media screen and (max-width: 400px) {
   .name {
     font-size: 40px;
@@ -271,30 +332,28 @@
     border-radius: 20px;
     display: inline-block;
   }
-
   .main {
+    background: -webkit-gradient(linear, left top, right top, color-stop(30%, rgba(0, 0, 0, 0.74)), to(rgba(0, 0, 0, 0.651))), url("../img/my3.jpg") center top;
     background: linear-gradient(to right, rgba(0, 0, 0, 0.74) 30%, rgba(0, 0, 0, 0.651) 100%), url("../img/my3.jpg") center top;
     background-size: cover;
     width: 100%;
     background-attachment: scroll;
     position: relative;
     height: auto;
-    padding: 25% 10% 0% 10%;
+    padding: 30% 10% 0% 10%;
   }
-
   .home {
     width: 100%;
     text-align: center;
     padding: 5% 10% 5% 10%;
   }
-
   .logoimg {
     width: 100%;
     opacity: 0.5;
-    box-shadow: 10px 10px 20px black;
+    -webkit-box-shadow: 10px 10px 20px black;
+            box-shadow: 10px 10px 20px black;
     border-radius: 20px;
   }
-
   @-webkit-keyframes ShineAnimation {
     from {
       background-repeat: no-repeat;
@@ -307,7 +366,6 @@
       background-position: 50px 150px;
     }
   }
-
   @keyframes ShineAnimation {
     from {
       background-repeat: no-repeat;
@@ -334,3 +392,4 @@
             animation-timing-function: cubic-bezier(0.12, 0.89, 0.98, 0.47);
   }
 }
+/*# sourceMappingURL=home.css.map */
