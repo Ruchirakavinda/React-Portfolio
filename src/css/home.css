@@ -4,7 +4,7 @@
   background-size: cover;
   width: 100%;
   height: auto;
-  padding: 16% 8% 14% 8%;
+  padding: 16% 8% 16% 8%;
   position: relative;
   background-attachment: fixed;
   top: 0;
@@ -500,6 +500,17 @@
     padding: 5% 0%;
     letter-spacing: 10px;
     border-radius: -20px;
+  }
+  .sub_topic_mob {
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    padding: 0% 5%;
+  }
+  .cont_mob {
+    text-align: center;
+    color: white;
+    padding: 5% 5%;
   }
 }
 
