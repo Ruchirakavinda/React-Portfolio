@@ -147,6 +147,7 @@
 .main2 {
   background-color: black;
   height: auto;
+  padding: 5% 0%;
 }
 
 .logoimg {
@@ -207,10 +208,6 @@
   padding-top: 1%;
 }
 
-.Home_Quality {
-  padding: 7% 0% 2% 0%;
-}
-
 .Home_Quality_Div {
   width: 120px;
   height: 120px;
@@ -242,12 +239,76 @@
   font-weight: bolder;
   width: 100%;
   text-align: center;
-  margin: 5% 0%;
+  margin: 6% 0% 4% 0%;
   border-top: 1px solid white;
   border-bottom: 1px solid white;
   padding: 5% 0%;
   letter-spacing: 10px;
   border-radius: -20px;
+}
+
+.Home_service_col {
+  padding: 8% 0%;
+}
+
+.shaped_div_fs {
+  width: 50%;
+  -webkit-transform: skew(-20deg);
+          transform: skew(-20deg);
+  background-color: gray;
+  background-image: url("../img/fs.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.shaped_div_uiux {
+  width: 50%;
+  -webkit-transform: skew(-20deg);
+          transform: skew(-20deg);
+  background-color: gray;
+  background-image: url("../img/fs.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.shaped_div_gd {
+  width: 50%;
+  -webkit-transform: skew(-20deg);
+          transform: skew(-20deg);
+  background-color: gray;
+  background-image: url("../img/fs.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.shaped_div_two {
+  width: 50px;
+  height: 300px;
+  -webkit-transform: skew(-20deg);
+          transform: skew(-20deg);
+  background-color: gray;
+  margin-left: 30px;
+}
+
+.sub_topic {
+  color: white;
+  font-weight: bold;
+}
+
+.cont {
+  color: white;
+  padding: 5% 0%;
+}
+
+.service_btn {
+  background-color: rgba(0, 153, 255, 0.767);
+  border-radius: 50px;
+  color: white;
+  text-align: center;
+  width: 150px;
+  padding: 1% 2%;
+  font-size: 16px;
+  font-weight: 500;
 }
 
 @media screen and (max-width: 1158px) {
@@ -383,6 +444,19 @@
     position: relative;
     height: auto;
     padding: 35% 10% 10% 10%;
+  }
+  .Home_slog_One {
+    color: white;
+    font-size: 30px;
+    font-weight: bolder;
+    width: 100%;
+    text-align: center;
+    margin: 5% 0%;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    padding: 5% 0%;
+    letter-spacing: 10px;
+    border-radius: -20px;
   }
 }
 

@@ -4,6 +4,7 @@ import { MDBCol, MDBContainer, MDBRow } from 'mdb-react-ui-kit';
 import q1 from '../img/q1.png';
 import q2 from '../img/q2.png';
 import q3 from '../img/q3.png';
+import { Link } from 'react-router-dom';
 
 // import logo from '../img/logo.png'
 
@@ -22,7 +23,7 @@ function Home() {
                </div> */}
             <div className=" home">
                  <span className='iam'>Hi,  I'm </span>
-                 <h1 className='name'>Ruchira <span className='lname'>Kavinda</span></h1><p className='skill'>Interested In Full Stack Developing,<br/> UI / UX & Graphic Designing</p>
+                 <h1 className='name'>Ruchira <span className='lname'>Kavinda</span></h1><p className='skill'>Interested In Full-Stack Development,<br/> UI / UX & Graphic Design</p>
 
               <hr className='hr1'/>
 
@@ -50,7 +51,7 @@ function Home() {
                         </div>
                      </div>
                      <div className='d-flex justify-content-center'>
-                        <p className='Home_Quality_Text'>Unique Design</p>
+                        <p className='Home_Quality_Text'>Unique</p>
                      </div>
                   </MDBCol>
                   <MDBCol className='Home_Quality  ' lg='4' md='4' sm='4'>
@@ -70,7 +71,7 @@ function Home() {
                         </div>
                      </div>
                      <div className='d-flex justify-content-center'>
-                        <p className='Home_Quality_Text'>Creative Ideas</p>
+                        <p className='Home_Quality_Text'>Creative</p>
                      </div>
                   </MDBCol>
                </MDBRow>
@@ -82,37 +83,47 @@ function Home() {
             </h1>
             
             <MDBContainer className='main2_cont01'>
+
                <MDBRow>
-                  <MDBCol className='Home_Quality ' lg='4' md='4' sm='4'>
-                     <div className='d-flex justify-content-center'>
-                        <div className='Home_Quality_Div d-flex align-items-center justify-content-center'>
-                           <img src={q1} alt="q1" className='mx-auto' style={{ width : "70%"}}/>
-                        </div>
-                     </div>
-                     <div className='d-flex justify-content-center'>
-                        <p className='Home_Quality_Text'>Unique Design</p>
-                     </div>
-                  </MDBCol>
-                  <MDBCol className='Home_Quality  ' lg='4' md='4' sm='4'>
-                     <div className='d-flex justify-content-center'>
-                        <div className='Home_Quality_Div d-flex align-items-center justify-content-center'>
-                           <img src={q2} alt="q2" className='mx-auto' style={{ width : "50%"}}/>
-                        </div>
-                     </div>
-                     <div className='d-flex justify-content-center'>
-                        <p className='Home_Quality_Text'>Standard Quality</p>
-                     </div>
-                  </MDBCol>
-                  <MDBCol className='Home_Quality ' lg='4' md='4' sm='4'>
-                     <div className='d-flex justify-content-center'>
-                        <div className='Home_Quality_Div d-flex align-items-center justify-content-center'>
-                           <img src={q3} alt="q3" className='mx-auto' style={{ width : "50%"}}/>
-                        </div>
-                     </div>
-                     <div className='d-flex justify-content-center'>
-                        <p className='Home_Quality_Text'>Creative Ideas</p>
-                     </div>
-                  </MDBCol>
+                 <MDBCol className='Home_service_col d-flex justify-content-center' lg='6' md='12' sm='12' >
+                    <div className='shaped_div_fs'></div>
+                    <div className='shaped_div_two'></div>
+                 </MDBCol>
+                 <MDBCol className='Home_service_col' lg='6' md='0' sm='0' >
+                    <h2 className='sub_topic'>Full-Stack Development</h2>
+                    <p className='cont'>Nulla occaecat in voluptate excepteur cupidatat incididunt ut anim dolor. Ex reprehenderit cillum id exercitation eu fugiat laborum adipisicing excepteur duis. Et nisi non proident cillum anim labore. Aliquip non anim ad quis incididunt cupidatat ut est reprehenderit in nisi. Aliquip labore ea laborum occaecat elit id veniam in sint magna esse laborum eu. Ullamco quis aliqua proident eiusmod ut cillum veniam ea voluptate.
+                    </p>
+
+                   <Link to="/project"> <div className='service_btn'> More </div></Link>
+                 </MDBCol>
+               </MDBRow>
+
+               <MDBRow>
+                 <MDBCol className='Home_service_col ' lg='6' md='12' sm='12' >
+                 <h2 className='sub_topic'>UI / UX Design</h2>
+                    <p className='cont'>Nulla occaecat in voluptate excepteur cupidatat incididunt ut anim dolor. Ex reprehenderit cillum id exercitation eu fugiat laborum adipisicing excepteur duis. Et nisi non proident cillum anim labore. Aliquip non anim ad quis incididunt cupidatat ut est reprehenderit in nisi. Aliquip labore ea laborum occaecat elit id veniam in sint magna esse laborum eu. Ullamco quis aliqua proident eiusmod ut cillum veniam ea voluptate.
+                    </p>
+                    <Link to="/project"> <div className='service_btn'> More </div></Link>
+                   
+                 </MDBCol>
+                 <MDBCol className='Home_service_col d-flex justify-content-center' lg='6' md='12' sm='12' >
+                 <div className='shaped_div_two' style={{marginRight:"30px"}}></div>
+                 <div className='shaped_div_uiux'></div>
+                 </MDBCol>
+               </MDBRow>
+
+               <MDBRow>
+                 <MDBCol className='Home_service_col d-flex justify-content-center' lg='6' md='12' sm='12' >
+                    <div className='shaped_div_gd'></div>
+                    <div className='shaped_div_two'></div>
+                 </MDBCol>
+                 <MDBCol className='Home_service_col' lg='6' md='0' sm='0' >
+                    <h2 className='sub_topic'>Graphic Design</h2>
+                    <p className='cont'>Nulla occaecat in voluptate excepteur cupidatat incididunt ut anim dolor. Ex reprehenderit cillum id exercitation eu fugiat laborum adipisicing excepteur duis. Et nisi non proident cillum anim labore. Aliquip non anim ad quis incididunt cupidatat ut est reprehenderit in nisi. Aliquip labore ea laborum occaecat elit id veniam in sint magna esse laborum eu. Ullamco quis aliqua proident eiusmod ut cillum veniam ea voluptate.
+                    </p>
+
+                   <Link to="/project"> <div className='service_btn'> More </div></Link>
+                 </MDBCol>
                </MDBRow>
          
             </MDBContainer>
