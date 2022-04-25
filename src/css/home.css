@@ -4,7 +4,7 @@
   background-size: cover;
   width: 100%;
   height: auto;
-  padding: 16% 10% 14% 10%;
+  padding: 16% 8% 14% 8%;
   position: relative;
   background-attachment: fixed;
   top: 0;
@@ -206,6 +206,7 @@
 
 .main2_cont01 {
   padding-top: 1%;
+  display: block;
 }
 
 .Home_Quality_Div {
@@ -266,7 +267,7 @@
   -webkit-transform: skew(-20deg);
           transform: skew(-20deg);
   background-color: gray;
-  background-image: url("../img/fs.jpg");
+  background-image: url("../img/ui.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -276,13 +277,13 @@
   -webkit-transform: skew(-20deg);
           transform: skew(-20deg);
   background-color: gray;
-  background-image: url("../img/fs.jpg");
+  background-image: url("../img/gd.png");
   background-size: cover;
-  background-position: center;
+  background-position: left;
 }
 
 .shaped_div_two {
-  width: 50px;
+  width: 10%;
   height: 300px;
   -webkit-transform: skew(-20deg);
           transform: skew(-20deg);
@@ -309,6 +310,38 @@
   padding: 1% 2%;
   font-size: 16px;
   font-weight: 500;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.service_btn:hover {
+  background-color: white;
+  border-radius: 50px;
+  color: black;
+  text-align: center;
+  width: 150px;
+  padding: 1% 2%;
+  font-size: 16px;
+  font-weight: 500;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.main2_cont01_mobile {
+  display: none;
+  padding: 10% 0%;
+}
+
+.sub_topic_mob {
+  text-align: center;
+  color: white;
+  font-weight: bold;
+}
+
+.cont_mob {
+  text-align: center;
+  color: white;
+  padding: 5% 0%;
 }
 
 @media screen and (max-width: 1158px) {
@@ -355,6 +388,13 @@
     font-size: 20px;
     font-weight: 400;
     padding: 7% 0%;
+  }
+  .main2_cont01 {
+    padding-top: 1%;
+    display: none;
+  }
+  .main2_cont01_mobile {
+    display: block;
   }
 }
 
@@ -432,6 +472,9 @@
     font-size: 25px;
     font-weight: 400;
   }
+  .Home_service_col {
+    padding: 10% 0%;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -489,6 +532,17 @@
     -webkit-box-shadow: 10px 10px 20px black;
             box-shadow: 10px 10px 20px black;
     border-radius: 20px;
+  }
+  .shaped_div_two {
+    width: 10%;
+    height: 200px;
+    -webkit-transform: skew(-20deg);
+            transform: skew(-20deg);
+    background-color: gray;
+    margin-left: 30px;
+  }
+  .Home_service_col {
+    padding: 15% 0%;
   }
   @-webkit-keyframes ShineAnimation {
     from {

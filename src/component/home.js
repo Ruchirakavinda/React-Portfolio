@@ -4,6 +4,7 @@ import { MDBCol, MDBContainer, MDBRow } from 'mdb-react-ui-kit';
 import q1 from '../img/q1.png';
 import q2 from '../img/q2.png';
 import q3 from '../img/q3.png';
+import gd from '../img/gd.png';
 import { Link } from 'react-router-dom';
 
 // import logo from '../img/logo.png'
@@ -125,6 +126,57 @@ function Home() {
                    <Link to="/project"> <div className='service_btn'> More </div></Link>
                  </MDBCol>
                </MDBRow>
+         
+            </MDBContainer>
+
+{/*///////////////////////////*/}
+
+            <MDBContainer className='main2_cont01_mobile'>
+
+               <MDBRow>
+                 <MDBCol className='Home_service_col' lg='6' md='12' sm='12' >
+                 <h2 className='sub_topic_mob'>Full-Stack Development</h2>
+                    <p className='cont_mob'>Nulla occaecat in voluptate excepteur cupidatat incididunt ut anim dolor. Ex reprehenderit cillum id exercitation eu fugiat laborum adipisicing excepteur duis. Et nisi non proident cillum anim labore. Aliquip non anim ad quis incididunt cupidatat ut est reprehenderit in nisi. Aliquip labore ea laborum occaecat elit id veniam in sint magna esse laborum eu. Ullamco quis aliqua proident eiusmod ut cillum veniam ea voluptate.
+                    </p>
+                    <Link to="/project" className='d-flex justify-content-center'> <div className='service_btn'> More </div></Link>
+                   
+                 </MDBCol>
+                 <MDBCol className='Home_service_col d-flex justify-content-center' lg='6' md='12' sm='12' >
+                 <div className='shaped_div_two' style={{marginRight:"30px",marginLeft:"-5px"}}></div>
+                 <div className='shaped_div_fs'></div>
+                 </MDBCol>
+               </MDBRow>
+
+
+               <MDBRow>
+                 <MDBCol className='Home_service_col' lg='6' md='12' sm='12' >
+                 <h2 className='sub_topic_mob'>UI / UX Design</h2>
+                    <p className='cont_mob'>Nulla occaecat in voluptate excepteur cupidatat incididunt ut anim dolor. Ex reprehenderit cillum id exercitation eu fugiat laborum adipisicing excepteur duis. Et nisi non proident cillum anim labore. Aliquip non anim ad quis incididunt cupidatat ut est reprehenderit in nisi. Aliquip labore ea laborum occaecat elit id veniam in sint magna esse laborum eu. Ullamco quis aliqua proident eiusmod ut cillum veniam ea voluptate.
+                    </p>
+                    <Link to="/project" className='d-flex justify-content-center'> <div className='service_btn'> More </div></Link>
+                   
+                 </MDBCol>
+                 <MDBCol className='Home_service_col d-flex justify-content-center' lg='6' md='12' sm='12' >
+                 <div className='shaped_div_two' style={{marginRight:"30px",marginLeft:"-5px"}}></div>
+                 <div className='shaped_div_uiux'></div>
+                 </MDBCol>
+               </MDBRow>
+
+               <MDBRow>
+                 <MDBCol className='Home_service_col' lg='6' md='12' sm='12' >
+                 <h2 className='sub_topic_mob'>Graphic Design</h2>
+                    <p className='cont_mob'>Nulla occaecat in voluptate excepteur cupidatat incididunt ut anim dolor. Ex reprehenderit cillum id exercitation eu fugiat laborum adipisicing excepteur duis. Et nisi non proident cillum anim labore. Aliquip non anim ad quis incididunt cupidatat ut est reprehenderit in nisi. Aliquip labore ea laborum occaecat elit id veniam in sint magna esse laborum eu. Ullamco quis aliqua proident eiusmod ut cillum veniam ea voluptate.
+                    </p>
+                    <Link to="/project" className='d-flex justify-content-center'> <div className='service_btn'> More </div></Link>
+                   
+                 </MDBCol>
+                 <MDBCol className='Home_service_col d-flex justify-content-center' lg='6' md='12' sm='12' >
+                 <div className='shaped_div_two' style={{marginRight:"30px",marginLeft:"-5px"}}></div>
+                 <div className='shaped_div_gd'></div>
+                 </MDBCol>
+               </MDBRow>
+
+               
          
             </MDBContainer>
 
