@@ -39,15 +39,16 @@ function Nav() {
             </NavLink>
           </ul>
         </nav>
+
         <div className='nav1' id='nav1'>
           <img src={nav1} alt='Nav bar logo' className='nav1img' id='navimg' />
-
         </div>
         <div className='nav2' id='nav2'>
         <img src={nav2} alt='Nav bar logo' className='nav2img' id='nav2img'/>
-
         </div>
+        
       </div>
+
     </header>
     
   );

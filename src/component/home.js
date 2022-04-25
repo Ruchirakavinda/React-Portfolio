@@ -1,7 +1,11 @@
 import React from 'react';
 import '../css/home.css';
 import { MDBCol, MDBContainer, MDBRow } from 'mdb-react-ui-kit';
-import logo from '../img/logo.png'
+import q1 from '../img/q1.png';
+import q2 from '../img/q2.png';
+import q3 from '../img/q3.png';
+
+// import logo from '../img/logo.png'
 
 function Home() {
     return(
@@ -35,7 +39,83 @@ function Home() {
          </MDBRow>
          </MDBContainer>
 
-         <MDBContainer fluid className="main2">
+         <MDBContainer fluid className="main2" >
+
+            <MDBContainer className='main2_cont01'>
+               <MDBRow>
+                  <MDBCol className='Home_Quality ' lg='4' md='4' sm='4'>
+                     <div className='d-flex justify-content-center'>
+                        <div className='Home_Quality_Div d-flex align-items-center justify-content-center'>
+                           <img src={q1} alt="q1" className='mx-auto' style={{ width : "70%"}}/>
+                        </div>
+                     </div>
+                     <div className='d-flex justify-content-center'>
+                        <p className='Home_Quality_Text'>Unique Design</p>
+                     </div>
+                  </MDBCol>
+                  <MDBCol className='Home_Quality  ' lg='4' md='4' sm='4'>
+                     <div className='d-flex justify-content-center'>
+                        <div className='Home_Quality_Div d-flex align-items-center justify-content-center'>
+                           <img src={q2} alt="q2" className='mx-auto' style={{ width : "50%"}}/>
+                        </div>
+                     </div>
+                     <div className='d-flex justify-content-center'>
+                        <p className='Home_Quality_Text'>Standard Quality</p>
+                     </div>
+                  </MDBCol>
+                  <MDBCol className='Home_Quality ' lg='4' md='4' sm='4'>
+                     <div className='d-flex justify-content-center'>
+                        <div className='Home_Quality_Div d-flex align-items-center justify-content-center'>
+                           <img src={q3} alt="q3" className='mx-auto' style={{ width : "50%"}}/>
+                        </div>
+                     </div>
+                     <div className='d-flex justify-content-center'>
+                        <p className='Home_Quality_Text'>Creative Ideas</p>
+                     </div>
+                  </MDBCol>
+               </MDBRow>
+         
+            </MDBContainer>
+
+            <h1 className='Home_slog_One'>
+               EXPAND THE LIFE <span style={{color:"rgba(0, 153, 255, 0.767)"}}>ONE PIXEL</span> AT A TIME
+            </h1>
+            
+            <MDBContainer className='main2_cont01'>
+               <MDBRow>
+                  <MDBCol className='Home_Quality ' lg='4' md='4' sm='4'>
+                     <div className='d-flex justify-content-center'>
+                        <div className='Home_Quality_Div d-flex align-items-center justify-content-center'>
+                           <img src={q1} alt="q1" className='mx-auto' style={{ width : "70%"}}/>
+                        </div>
+                     </div>
+                     <div className='d-flex justify-content-center'>
+                        <p className='Home_Quality_Text'>Unique Design</p>
+                     </div>
+                  </MDBCol>
+                  <MDBCol className='Home_Quality  ' lg='4' md='4' sm='4'>
+                     <div className='d-flex justify-content-center'>
+                        <div className='Home_Quality_Div d-flex align-items-center justify-content-center'>
+                           <img src={q2} alt="q2" className='mx-auto' style={{ width : "50%"}}/>
+                        </div>
+                     </div>
+                     <div className='d-flex justify-content-center'>
+                        <p className='Home_Quality_Text'>Standard Quality</p>
+                     </div>
+                  </MDBCol>
+                  <MDBCol className='Home_Quality ' lg='4' md='4' sm='4'>
+                     <div className='d-flex justify-content-center'>
+                        <div className='Home_Quality_Div d-flex align-items-center justify-content-center'>
+                           <img src={q3} alt="q3" className='mx-auto' style={{ width : "50%"}}/>
+                        </div>
+                     </div>
+                     <div className='d-flex justify-content-center'>
+                        <p className='Home_Quality_Text'>Creative Ideas</p>
+                     </div>
+                  </MDBCol>
+               </MDBRow>
+         
+            </MDBContainer>
 
          </MDBContainer>
          </div>

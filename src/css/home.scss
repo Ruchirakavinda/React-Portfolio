@@ -2,16 +2,17 @@
 
 .main
 {
-    background: linear-gradient(to right ,rgba(0, 0, 0, 0.60)30%,rgba(0, 0, 0, 0.60)100%), url('../img/my3.jpg') center top;
+    background: linear-gradient(to right ,rgba(0, 0, 0, 0.60) 30%,rgba(0, 0, 0, 0.60) 100%), url('../img/my3.jpg') center top;
     background-size: cover;
     width: 100%;
     height: auto;
-    padding: 17% 10% 14% 10%;
+    padding: 16% 10% 14% 10%;
     position: relative;
     background-attachment: fixed;
     top: 0;
     bottom: 0;
 }
+
 .home
 {
     width: 100%;
@@ -135,7 +136,7 @@
 
 .main2{
     background-color: black;
-    height: 100px;
+    height: auto;
 }
 
 .logoimg{
@@ -175,6 +176,51 @@
     border: solid $blue 1px;
     box-shadow: 0px 0px 20px $blue;
 }
+
+.main2_cont01{
+    padding-top: 1%;
+}
+
+.Home_Quality{
+    padding: 7% 0% 2% 0%;
+}
+
+
+.Home_Quality_Div{
+
+    width: 120px;
+    height: 120px;
+    border-radius: 20px;
+    border: solid $blue 1px;
+    box-shadow: 0px 0px 25px $blue;
+    animation-name: ShineAnimation02; 
+    animation-duration: 5s; 
+    animation-iteration-count: infinite; 
+    animation-timing-function: cubic-bezier(.12,.89,.98,.47); 
+    animation-delay: 5s;
+}
+
+.Home_Quality_Text{
+    color: white;
+    font-size: 25px;
+    padding: 7% 0%;
+}
+
+.Home_slog_One{
+    color: white;
+    font-size: 40px;
+    font-weight: bolder;
+    width: 100%;
+    text-align: center;
+    margin: 5% 0%;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    padding: 5% 0%;
+    letter-spacing: 10px;
+    border-radius: -20px;
+}
+
+
 
 
 
@@ -223,9 +269,12 @@
     display: none;
     
 }
-
-
-
+.Home_Quality_Text{
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    padding: 7% 0%;
+}
 
 }
 
@@ -248,15 +297,24 @@
     }
     .main
     {
-        background: linear-gradient(to right ,rgba(0, 0, 0, 0.60)30%,rgba(0, 0, 0, 0.60)100%), url('../img/my3.jpg') center top;
+        background: linear-gradient(to right ,rgba(0, 0, 0, 0.60) 30%,rgba(0, 0, 0, 0.60) 100%), url('../img/my3.jpg') center top;
         background-size: cover;
         width: 100%;
         height: auto;
-        padding: 20% 10% 5% 10%;
+        padding: 20% 10% 10% 10%;
         position: relative;
         background-attachment:scroll;
         top: 0;
         bottom: 0;
+    }
+    .main2_cont01{
+        padding-top: 5%;
+    }
+    .Home_Quality_Text{
+        color: white;
+        font-size: 18px;
+        font-weight: 400;
+        padding: 7% 0%;
     }
 }
 
@@ -265,11 +323,11 @@
 
  .main
 {
-    background: linear-gradient(to right ,rgba(0, 0, 0, 0.60)30%,rgba(0, 0, 0, 0.60)100%), url('../img/my3.jpg') center top;
+    background: linear-gradient(to right ,rgba(0, 0, 0, 0.60) 30%,rgba(0, 0, 0, 0.60) 100%), url('../img/my3.jpg') center top;
     background-size: cover;
     width: 100%;
     height: auto;
-    padding: 20% 10% 5% 10%;
+    padding: 20% 10% 10% 10%;
     position: relative;
     background-attachment:scroll;
     top: 0;
@@ -313,13 +371,13 @@
 .main
 {
   
-    background: linear-gradient(to right ,rgba(0, 0, 0, 0.74)30%,rgba(0, 0, 0, 0.651)100%), url('../img/my3.jpg') center top;
+    background: linear-gradient(to right ,rgba(0, 0, 0, 0.74) 30%,rgba(0, 0, 0, 0.651) 100%), url('../img/my3.jpg') center top;
     background-size: cover;
     width: 100%;
     background-attachment:scroll;
     position:relative;
     height: auto;
-    padding: 35% 10% 0% 10%;
+    padding: 35% 10% 10% 10%;
     
 }
 }
@@ -339,13 +397,13 @@
 .main
 {
   
-    background: linear-gradient(to right ,rgba(0, 0, 0, 0.74)30%,rgba(0, 0, 0, 0.651)100%), url('../img/my3.jpg') center top;
+    background: linear-gradient(to right ,rgba(0, 0, 0, 0.74) 30%,rgba(0, 0, 0, 0.651) 100%), url('../img/my3.jpg') center top;
     background-size: cover;
     width: 100%;
     background-attachment:scroll;
     position:relative;
     height: auto;
-    padding: 30% 10% 0% 10%;
+    padding: 30% 10% 10% 10%;
     
 }
 .home
@@ -361,7 +419,6 @@
     box-shadow: 10px 10px 20px rgb(0, 0, 0);
     border-radius: 20px;
 }
-
 
 
 @keyframes ShineAnimation{ 
