@@ -83,7 +83,7 @@ function Home() {
                EXPAND THE LIFE <span style={{color:"rgba(0, 153, 255, 0.767)"}}>ONE PIXEL</span> AT A TIME
             </h1>
             
-            <MDBContainer className='main2_cont01'>
+            <MDBContainer className='main2_cont02'>
 
                <MDBRow>
                  <MDBCol className='Home_service_col d-flex justify-content-center' lg='6' md='12' sm='12' >
