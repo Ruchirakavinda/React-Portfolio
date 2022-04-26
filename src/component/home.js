@@ -181,7 +181,7 @@ function Home() {
             </MDBContainer>
 
             <div className='Home_end_row'>
-               <h1 className='Home_end_slog'> <span style={{color:"rgba(0, 153, 255, 0.767)"}}>So</span>, Let's Get Started !</h1>
+               <h1 className='Home_end_slog'> <span style={{color:"rgba(0, 153, 255, 0.767)"}}>So</span>, Let's Get Started!</h1>
                <div className='d-flex justify-content-center' >
                   <Link to="/contact"><button className='contact_btn mx-auto'>Contact Me</button></Link>
                </div>
