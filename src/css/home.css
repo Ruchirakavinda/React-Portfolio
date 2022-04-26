@@ -348,6 +348,63 @@
   padding: 5% 0%;
 }
 
+.Home_end_row {
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  padding: 3% 10%;
+  margin-top: 6%;
+}
+
+.Home_end_slog {
+  color: white;
+  font-size: 45px;
+  font-weight: bolder;
+  width: 100%;
+  text-align: center;
+  letter-spacing: 10px;
+  border-radius: -20px;
+}
+
+.contact_btn {
+  color: white;
+  border: 2px solid #0086df;
+  width: 200px;
+  background-color: rgba(0, 0, 0, 0);
+  padding: 10px 15px 10px 15px;
+  border-radius: 25px;
+  font-weight: 500;
+  -webkit-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.719);
+          box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.719);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  margin-top: 25px;
+  -webkit-animation-name: ShineAnimation02;
+          animation-name: ShineAnimation02;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: cubic-bezier(0.12, 0.89, 0.98, 0.47);
+          animation-timing-function: cubic-bezier(0.12, 0.89, 0.98, 0.47);
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+}
+
+.contact_btn:hover {
+  color: black;
+  background-color: rgba(255, 255, 255, 0.836);
+  width: 200px;
+  padding: 10px 15px 10px 15px;
+  border-radius: 25px;
+  font-weight: 500;
+  border: solid rgba(0, 153, 255, 0.767) 0px;
+  -webkit-box-shadow: 0px 0px 20px rgba(0, 153, 255, 0.767);
+          box-shadow: 0px 0px 20px rgba(0, 153, 255, 0.767);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  border: 2px solid rgba(255, 255, 255, 0);
+}
+
 @media screen and (max-width: 1158px) {
   .skill {
     color: white;
@@ -515,6 +572,21 @@
     text-align: center;
     color: white;
     padding: 5% 5%;
+  }
+  .Home_end_row {
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    padding: 5% 10%;
+    margin: 10% 0%;
+  }
+  .Home_end_slog {
+    color: white;
+    font-size: 35px;
+    font-weight: bolder;
+    width: 100%;
+    text-align: center;
+    letter-spacing: 10px;
+    border-radius: -20px;
   }
 }
 
