@@ -2,17 +2,14 @@
 
 .aboutmain
 {
-    background-image:linear-gradient(to right ,rgba(0, 0, 0, 0.75)30%,rgba(0, 0, 0, 0.75)100%), url('../img/menuback.jpg');
+    background-image:linear-gradient(to right ,rgba(0, 0, 0, 0.75) 30%,rgba(0, 0, 0, 0.75) 100%), url('../img/menuback.jpg');
     background-size: cover;
     width: 100%;
     height: auto;
     background-attachment: fixed;
     padding: 5% 0% 12% 0%;
 }
-.aboutrow
-{
-    height: auto;
-}
+
 .myimg
 {
     width:280px;
@@ -64,29 +61,63 @@ margin-bottom: 5%;
 }
 .aboutrow2
 {
- padding-top: 50px;
  background-color: black;
 }
 .crd1
 {
     width: 100%;
-    background-color: rgb(27, 27, 27);
+    background-color: rgb(0, 0, 0);
     border-bottom: 7px solid $blue;
-    padding: 10px;
-    margin-top: 5%;
+    padding: 50px;
     border-radius: 20px;
+    margin-top: -100px;
+    margin-bottom: 100px
 }
 .crdtopic
 {
-    color: $blue;
+    color: white;
     font-size: 25px;
-    font-weight: 600;
+    font-weight: 500;
 }
+
+.About_main_topic{
+    color: white;
+    font-size: 40px;
+    font-weight: 900;
+    width: 100%;
+    text-align: center;
+    letter-spacing: 10px;
+    border-radius: -20px;
+    padding: 5%;
+
+}
+
+.wid_crd1{
+ width: 80%;
+ border: solid $blue 4px;
+ background-color: rgba(0, 0, 0, 0);
+ border-radius: 20px;
+ text-align: center;
+ padding: 10% 5% 5% 5%;
+ margin:15% 0%;
+}
+.wid_crd2{
+    width: 80%;
+    border: solid $blue 2px;
+    background-color: $blue;
+    border-radius: 20px;
+    text-align: center;
+    padding: 10% 5% 5% 5%;
+    margin:15% 0%;
+}
+
+
+
 @media screen and (max-width: 992px)
 {
     .aboutmain
 {
-    background-image:linear-gradient(to right ,rgba(0, 0, 0, 0.75)30%,rgba(0, 0, 0, 0.75)100%), url('../img/menuback.jpg');
+    background-image:linear-gradient(to right ,rgba(0, 0, 0, 0.75) 30%,rgba(0, 0, 0, 0.75) 100%), url('../img/menuback.jpg');
     background-size: cover;
     width: 100%;
     height: auto;
@@ -98,8 +129,8 @@ margin-bottom: 5%;
     width: 80%;
     background-color: rgb(43, 43, 43);
     border-bottom: 7px solid $blue;
-    padding: 10px;
-    margin-top: 5%;
+    padding: 20px;
+    margin-top: 15%;
 }
 }
 
