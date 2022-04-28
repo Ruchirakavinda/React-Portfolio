@@ -90,7 +90,7 @@ function About() {
 
                     <MDBRow>
                     <MDBCol className='Home_service_col d-flex justify-content-center' lg='6' md='12' sm='12' >
-                        <div className='shaped_div_fs'></div>
+                        <div className='about_shaped_div_ph'></div>
                         <div className='shaped_div_two'></div>
                     </MDBCol>
                     <MDBCol className='Home_service_col' lg='6' md='0' sm='0' >
@@ -112,7 +112,7 @@ function About() {
                     </MDBCol>
                     <MDBCol className='Home_service_col d-flex justify-content-center' lg='6' md='12' sm='12' >
                     <div className='shaped_div_two' style={{marginRight:"30px"}}></div>
-                    <div className='shaped_div_uiux'></div>
+                    <div className='about_shaped_div_pr'></div>
                     </MDBCol>
                     </MDBRow>
 
@@ -133,7 +133,7 @@ function About() {
                     </MDBCol>
                     <MDBCol className='Home_service_col d-flex justify-content-center' lg='6' md='12' sm='12' >
                     <div className='shaped_div_two' style={{marginRight:"30px",marginLeft:"-5px"}}></div>
-                    <div className='shaped_div_fs'></div>
+                    <div className='about_shaped_div_ph'></div>
                     </MDBCol>
                     </MDBRow>
 
@@ -148,7 +148,7 @@ function About() {
                     </MDBCol>
                     <MDBCol className='Home_service_col d-flex justify-content-center' lg='6' md='12' sm='12' >
                     <div className='shaped_div_two' style={{marginRight:"30px",marginLeft:"-5px"}}></div>
-                    <div className='shaped_div_uiux'></div>
+                    <div className='about_shaped_div_pr'></div>
                     </MDBCol>
                     </MDBRow>
 
