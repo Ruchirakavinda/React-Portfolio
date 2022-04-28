@@ -160,6 +160,25 @@ margin-bottom: 5%;
     text-align: center;
 }
 
+.about_shaped_div_ph{
+    width: 50%;
+    transform: skew(-20deg);
+    background-color: gray;
+    background-image: url("../img/ph.jpeg");
+    background-size: cover;
+    background-position: center;
+   }
+
+.about_shaped_div_pr{
+    width: 50%;
+    transform: skew(-20deg);
+    background-color: gray;
+    background-image: url("../img/dr.jpg");
+    background-size: cover;
+    background-position: center;
+   }
+
+
 
 @media screen and (max-width: 992px)
 {
