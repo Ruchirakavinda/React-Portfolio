@@ -4,6 +4,7 @@ import myimg from '../img/myimg4.png';
 import tech from '../img/tech.png';
 import { MDBContainer, MDBRow ,MDBCol } from 'mdb-react-ui-kit';
 import { Link } from 'react-router-dom';
+import DemoCarousel from './feedbackSlider';
 
 
 function About() {
@@ -153,28 +154,16 @@ function About() {
                     </MDBRow>
 
 
-                </MDBContainer>
+                </MDBContainer>       
 
 
-
-
-
-
-
-                {/* <MDBContainer className='About_otherskill_row' >
-                  
-                        <h1 className='crdtopic'>Graphic Design</h1>
-                        <p className='aboutcont'>Aliquip nulla cupidatat tempor dolore fugiat velit officia exercitation pariatur ea. Sint mollit cillum magna labore consequat quis minim labore enim. Occaecat ipsum consequat in occaecat officia eu laboris ex.Irure ullamco pariatur deserunt pariatur est excepteur. Dolore veniam magna ut esse enim deserunt consequat irure nulla. Duis aliqua dolore irure laborum elit nostrud nulla excepteur tempor fugiat occaecat velit est. </p>
-                   
-                        <Link to="/project"> <div className='service_btn'> More </div></Link>
-                </MDBContainer>     
-
-                <MDBContainer  className='About_otherskill_row'>
-                  
-                        <h1 className='crdtopic'>Graphic Design</h1>
-                        <p className='aboutcont'>Aliquip nulla cupidatat tempor dolore fugiat velit officia exercitation pariatur ea. Sint mollit cillum magna labore consequat quis minim labore enim. Occaecat ipsum consequat in occaecat officia eu laboris ex.Irure ullamco pariatur deserunt pariatur est excepteur. Dolore veniam magna ut esse enim deserunt consequat irure nulla. Duis aliqua dolore irure laborum elit nostrud nulla excepteur tempor fugiat occaecat velit est. </p>
-                   
-                </MDBContainer>            */}
+            <h1 className='About_main_topic' style={{paddingBottom:'0%'}}> WHAT <span style={{color:"rgba(0, 153, 255, 0.767)"}}>PEOPLE</span> SAY</h1>
+            <div className='d-flex justify-content-center' >
+                  <button className='contact_btn mx-auto'>Give Feedback</button>
+            </div>
+            <MDBContainer style={{marginTop:'50px',marginBottom:'150px'}}>
+                 <DemoCarousel/>
+            </MDBContainer>
 
 
             <div className='Home_end_row'>
@@ -184,6 +173,8 @@ function About() {
                </div>
             </div>
 
+
+           
             </MDBContainer>
 
        </>
