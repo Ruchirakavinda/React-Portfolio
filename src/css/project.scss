@@ -1,0 +1,10 @@
+@import './config.scss';
+
+.project_main{
+    background-image:linear-gradient(to right ,rgba(0, 0, 0, 0.75) 30%,rgba(0, 0, 0, 0.7) 100%), url('../img/projectmain.jpg');
+    background-size: cover;
+    width: 100%;
+    height: auto;
+    background-attachment: fixed;
+    padding: 5% 0% 12% 0%;
+}
