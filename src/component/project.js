@@ -1,10 +1,29 @@
 import React from 'react';
+import { MDBContainer, MDBRow ,MDBCol } from 'mdb-react-ui-kit';
+import { Link } from 'react-router-dom';
+import '../css/project.css';
 
 function Project() {
     return(
-        <div style={{textAlign:'center',position:'fixed',padding:'5vw',width:'100%',backgroundColor:'black',bottom:'0',top:'0',color:'white'}}>
-            <h1>My Projects</h1>
-         </div>
+        <>
+        <MDBContainer fluid className='project_main'>
+              <MDBContainer>
+                <MDBRow className='aboutrow1' >
+                    <MDBCol md='12' lg='4' className='aboutcol1' >
+                        <h1 className='aboutname'>DESIGNER </h1>
+                            <p className='aboutcont'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc hendrerit, ipsum condimentum ultricies vehicula, massa lorem tincidunt quam, at tincidunt libero enim ac leo. Maecenas eu nulla ornare, faucibus magna sit amet, ornare dolor. </p>
+                    </MDBCol>
+
+
+                    <MDBCol md='12' lg='4'  className='aboutcol3'>
+                        <h1 className='aboutname'>DEVELOPER</h1>
+                            <p className='aboutcont'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc hendrerit, ipsum condimentum ultricies vehicula, massa lorem tincidunt quam, at tincidunt libero enim ac leo. Maecenas eu nulla ornare, faucibus magna sit amet, ornare dolor. </p> 
+                    </MDBCol>
+                </MDBRow>
+               </MDBContainer>
+            </MDBContainer>
+        
+        </>
     );
 }
 

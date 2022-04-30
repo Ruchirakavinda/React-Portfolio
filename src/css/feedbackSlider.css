@@ -12,6 +12,10 @@
   height: 17px !important;
 }
 
+.carousel.carousel-slider .control-arrow:hover {
+  background: rgba(0, 0, 0, 0) !important;
+}
+
 .feedback_crd {
   margin: 70px;
   padding: 5%;
@@ -38,7 +42,7 @@
     border-left: 8px solid #fff !important;
   }
   .carousel .control-prev.control-arrow::before {
-    border-right: 0px solid #fff !important;
+    border-right: 8px solid #fff !important;
   }
 }
 /*# sourceMappingURL=feedbackSlider.css.map */
