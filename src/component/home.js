@@ -4,7 +4,6 @@ import { MDBCol, MDBContainer, MDBRow } from 'mdb-react-ui-kit';
 import q1 from '../img/q1.png';
 import q2 from '../img/q2.png';
 import q3 from '../img/q3.png';
-import gd from '../img/gd.png';
 import { Link } from 'react-router-dom';
 
 // import logo from '../img/logo.png'

@@ -1,0 +1,44 @@
+.thumbs-wrapper {
+  display: none !important;
+}
+
+.carousel .control-next.control-arrow::before {
+  border-left: 12px solid #fff !important;
+  height: 17px !important;
+}
+
+.carousel .control-prev.control-arrow::before {
+  border-right: 12px solid #fff !important;
+  height: 17px !important;
+}
+
+.feedback_crd {
+  margin: 70px;
+  padding: 5%;
+  background-color: #141414;
+  border-radius: 20px;
+  border-bottom: 7px solid rgba(0, 153, 255, 0.767);
+}
+
+.user_mail {
+  font-size: smaller;
+  color: white;
+  padding-top: 15px;
+}
+
+@media screen and (max-width: 500px) {
+  .feedback_crd {
+    margin: 50px 30px;
+    padding: 5%;
+    background-color: #141414;
+    border-radius: 20px;
+    border-bottom: 7px solid rgba(0, 153, 255, 0.767);
+  }
+  .carousel .control-next.control-arrow::before {
+    border-left: 8px solid #fff !important;
+  }
+  .carousel .control-prev.control-arrow::before {
+    border-right: 0px solid #fff !important;
+  }
+}
+/*# sourceMappingURL=feedbackSlider.css.map */
