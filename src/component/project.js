@@ -13,20 +13,21 @@ function Project() {
               <MDBContainer >
                 <MDBRow>
                     <MDBCol size='12' className='d-flex justify-content-center'>
-                        <h1 className='project_main_topic'>My Projects</h1>
+                        <h1 className='project_main_topic'>My <span style={{color:"rgba(0, 153, 255, 0.767)"}}> Projects</span></h1>
                     </MDBCol>
                     <MDBCol size='12' className='d-flex justify-content-center'>
                     <p className='project_cont' style={{width:'80%'}}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc hendrerit, ipsum condimentum ultricies vehicula, massa lorem tincidunt quam, at tincidunt libero enim ac leo. Maecenas eu nulla ornare, faucibus magna sit amet, ornare dolor.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc hendrerit, ipsum condimentum ultricies vehicula,  </p> 
                     </MDBCol>
                 </MDBRow>
-                <div className='d-flex justify-content-center'>
-                <div className='d-flex justify-content-center img_row'>
-                   <img src={git} alt='' className='project_git_img img-fluid mx-auto' />
-                    <img src={dri} alt=''className='project_dri_img img-fluid mx-auto' />
-                    <img src={be} alt='' className='project_be_img img-fluid mx-auto' />
-                </div>
-                </div>
                </MDBContainer>
+               
+               <div className='d-flex justify-content-center'>
+                    <div className='d-flex justify-content-center img_row'>
+                        <img src={git} alt='' className='project_git_img img-fluid mx-auto' />
+                        <img src={dri} alt=''className='project_dri_img img-fluid mx-auto' />
+                        <img src={be} alt='' className='project_be_img img-fluid mx-auto' />
+                    </div>
+               </div>
             </MDBContainer>
         
         </>
