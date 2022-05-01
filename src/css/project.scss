@@ -6,5 +6,126 @@
     width: 100%;
     height: auto;
     background-attachment: fixed;
-    padding: 5% 0% 12% 0%;
+    padding: 10% 50% 12% 50%;
+}
+.project_main_topic{
+    font-size: 55px;
+    font-weight: bold;
+    color: white;
+    padding: 10px 0px;
+    text-align: center;
+
+}
+
+.project_cont{
+    color: white;
+    text-align: center;
+    padding: 30px 0px;
+}
+
+.project_git_img{
+width: 42px;
+height: 40px;
+margin: 2% 5%;
+}
+
+.project_dri_img{
+    width: 150px;
+    height: 40px;
+    margin: 2% 5%;
+
+}
+
+.project_be_img{
+    width: 60px;
+    height: 40px;
+    margin: 2% 5%;
+
+}
+
+.img_row{
+    width: 60%;
+}
+
+
+@media screen and (max-width: 768px)
+{
+
+    .project_main{
+        background-image:linear-gradient(to right ,rgba(0, 0, 0, 0.75) 30%,rgba(0, 0, 0, 0.7) 100%), url('../img/projectmain.jpg');
+        background-size: cover;
+        width: 100%;
+        height: auto;
+        background-attachment: fixed;
+        padding: 20% 50% 15% 50%;
+    }
+    .project_main_topic{
+        font-size: 45px;
+        font-weight: bold;
+        color: white;
+        padding: 10px 0px;
+        text-align: center;
+    
+    }
+    .project_git_img{
+        width: 32px;
+        height: 30px;
+        margin: 2% 5%;
+        }
+        
+        .project_dri_img{
+            width: 130px;
+            height: 30px;
+            margin: 2% 5%;
+        
+        }
+        
+        .project_be_img{
+            width: 50px;
+            height: 30px;
+            margin: 2% 5%;
+        
+        }
+        .img_row{
+            width: 100%;
+        }
+        
+}
+
+
+@media screen and (max-width: 500px)
+{
+
+    .project_main{
+        background-image:linear-gradient(to right ,rgba(0, 0, 0, 0.75) 30%,rgba(0, 0, 0, 0.7) 100%), url('../img/projectmain.jpg');
+        background-size: cover;
+        width: 100%;
+        height: auto;
+        background-attachment: fixed;
+        padding: 30% 50% 25% 50%;
+    }
+
+    .project_git_img{
+        width: 32px;
+        height: 30px;
+        margin: 2% 5%;
+        }
+        
+        .project_dri_img{
+            width: 130px;
+            height: 30px;
+            margin: 2% 5%;
+        
+        }
+        
+        .project_be_img{
+            width: 50px;
+            height: 30px;
+            margin: 2% 5%;
+        
+        }
+        .img_row{
+            width: 100%;
+        }
+        
 }
