@@ -1,0 +1,29 @@
+.dev_crd {
+  margin: 10%;
+  padding: 10% 5%;
+  background-color: #141414;
+  border-radius: 20px;
+  border-bottom: 10px solid rgba(0, 153, 255, 0.767);
+  border-top: 0.1px solid rgba(0, 153, 255, 0.767);
+  text-align: center;
+}
+
+.crd_link {
+  color: white;
+  padding-top: 15px;
+  margin: 0px 30px;
+  font-weight: bold;
+  color: rgba(0, 153, 255, 0.767);
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.crd_link:hover {
+  color: white;
+  padding-top: 15px;
+  margin: 0px 30px;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+}
+/*# sourceMappingURL=developmentSlider.css.map */

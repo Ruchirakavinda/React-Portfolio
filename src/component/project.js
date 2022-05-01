@@ -1,10 +1,10 @@
 import React from 'react';
 import { MDBContainer, MDBRow ,MDBCol } from 'mdb-react-ui-kit';
-import { Link } from 'react-router-dom';
 import git from '../img/git.png';
 import dri from '../img/dri.png';
 import be from '../img/be.png';
 import '../css/project.css';
+import DevelopmentSlider from './developmentSlider';
 
 function Project() {
     return(
@@ -23,11 +23,34 @@ function Project() {
                
                <div className='d-flex justify-content-center'>
                     <div className='d-flex justify-content-center img_row'>
-                        <img src={git} alt='' className='project_git_img img-fluid mx-auto' />
-                        <img src={dri} alt=''className='project_dri_img img-fluid mx-auto' />
-                        <img src={be} alt='' className='project_be_img img-fluid mx-auto' />
+                        <img src={git} alt='' className='project_git_img img-fluid mx-auto' onClick={() => {window.location.href="https://github.com/Ruchirakavinda"}} />
+                        <img src={dri} alt=''className='project_dri_img img-fluid mx-auto' onClick={() => {window.location.href="https://dribbble.com/ruchirakvnd"}}  />
+                        <img src={be} alt='' className='project_be_img img-fluid mx-auto' onClick={() => {window.location.href="https://www.behance.net/ruchirakavinda"}}/>
                     </div>
                </div>
+            </MDBContainer>
+            <MDBContainer fluid className='projectrow2'>
+            <h1 className='About_main_topic'>PROJECTS</h1>
+
+            <div style={{marginTop:'50px'}}>
+            <h2 className='sub_topic' style={{textAlign:'center'}}>Photography and Retouching</h2>
+            <div className='d-flex justify-content-center'>
+            <p className='project_cont' style={{width:'70%'}}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc hendrerit, ipsum condimentum ultricies vehicula, massa lorem tincidunt quam, at tincidunt libero enim ac leo. Maecenas eu nulla ornare, faucibus magna sit amet, ornare dolor.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc hendrerit, ipsum condimentum ultricies vehicula,  </p> 
+            </div>
+
+            <DevelopmentSlider/>
+            </div>
+
+
+            <div style={{marginTop:'120px'}}>
+            <h2 className='sub_topic' style={{textAlign:'center'}}>Photography and Retouching</h2>
+            <div className='d-flex justify-content-center'>
+            <p className='project_cont' style={{width:'70%'}}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc hendrerit, ipsum condimentum ultricies vehicula, massa lorem tincidunt quam, at tincidunt libero enim ac leo. Maecenas eu nulla ornare, faucibus magna sit amet, ornare dolor.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc hendrerit, ipsum condimentum ultricies vehicula,  </p> 
+            </div>
+
+            <DevelopmentSlider/>
+            </div>
+
             </MDBContainer>
         
         </>

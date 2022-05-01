@@ -6,7 +6,7 @@
     width: 100%;
     height: auto;
     background-attachment: fixed;
-    padding: 10% 0% 12% 0%;
+    padding: 13% 0% 13% 0%;
 }
 .project_main_topic{
     font-size: 55px;
@@ -24,15 +24,17 @@
 }
 
 .project_git_img{
-width: 42px;
+width: 40px;
 height: 40px;
 margin: 2% 5%;
+cursor: pointer;
 }
 
 .project_dri_img{
     width: 160px;
     height: 40px;
     margin: 2% 5%;
+    cursor: pointer;
 
 }
 
@@ -40,6 +42,7 @@ margin: 2% 5%;
     width: 60px;
     height: 40px;
     margin: 2% 5%;
+    cursor: pointer;
 
 }
 
@@ -47,6 +50,24 @@ margin: 2% 5%;
     width: 60%;
 }
 
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+.projectrow2
+{
+    padding-bottom: 5%;
+    background: linear-gradient(-45deg, #000000,rgb(0, 27, 57), #000000,  #000000);
+	background-size: 500% 100%;
+	animation: gradient 10s ease infinite;
+}
 
 @media screen and (max-width: 768px)
 {
@@ -68,15 +89,17 @@ margin: 2% 5%;
     
     }
     .project_git_img{
-        width: 32px;
+        width: 30px;
         height: 30px;
         margin: 2% 5%;
+        cursor: pointer;
         }
         
         .project_dri_img{
             width: 140px;
             height: 30px;
             margin: 2% 5%;
+            cursor: pointer;
         
         }
         
@@ -84,6 +107,7 @@ margin: 2% 5%;
             width: 50px;
             height: 30px;
             margin: 2% 5%;
+            cursor: pointer;
         
         }
         .img_row{
@@ -106,15 +130,17 @@ margin: 2% 5%;
     }
 
     .project_git_img{
-        width: 32px;
+        width: 30px;
         height: 30px;
         margin: 2% 5%;
+        cursor: pointer;
         }
         
         .project_dri_img{
             width: 140px;
             height: 30px;
             margin: 2% 5%;
+            cursor: pointer;
         
         }
         
@@ -122,6 +148,7 @@ margin: 2% 5%;
             width: 50px;
             height: 30px;
             margin: 2% 5%;
+            cursor: pointer;
         
         }
         .img_row{
