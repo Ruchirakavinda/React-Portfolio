@@ -1,25 +1,31 @@
 import React from 'react';
 import { MDBContainer, MDBRow ,MDBCol } from 'mdb-react-ui-kit';
 import { Link } from 'react-router-dom';
+import git from '../img/git.png';
+import dri from '../img/dri.png';
+import be from '../img/be.png';
 import '../css/project.css';
 
 function Project() {
     return(
         <>
         <MDBContainer fluid className='project_main'>
-              <MDBContainer>
-                <MDBRow className='aboutrow1' >
-                    <MDBCol md='12' lg='4' className='aboutcol1' >
-                        <h1 className='aboutname'>DESIGNER </h1>
-                            <p className='aboutcont'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc hendrerit, ipsum condimentum ultricies vehicula, massa lorem tincidunt quam, at tincidunt libero enim ac leo. Maecenas eu nulla ornare, faucibus magna sit amet, ornare dolor. </p>
+              <MDBContainer >
+                <MDBRow>
+                    <MDBCol size='12' className='d-flex justify-content-center'>
+                        <h1 className='project_main_topic'>My Projects</h1>
                     </MDBCol>
-
-
-                    <MDBCol md='12' lg='4'  className='aboutcol3'>
-                        <h1 className='aboutname'>DEVELOPER</h1>
-                            <p className='aboutcont'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc hendrerit, ipsum condimentum ultricies vehicula, massa lorem tincidunt quam, at tincidunt libero enim ac leo. Maecenas eu nulla ornare, faucibus magna sit amet, ornare dolor. </p> 
+                    <MDBCol size='12' className='d-flex justify-content-center'>
+                    <p className='project_cont' style={{width:'80%'}}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc hendrerit, ipsum condimentum ultricies vehicula, massa lorem tincidunt quam, at tincidunt libero enim ac leo. Maecenas eu nulla ornare, faucibus magna sit amet, ornare dolor.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc hendrerit, ipsum condimentum ultricies vehicula,  </p> 
                     </MDBCol>
                 </MDBRow>
+                <div className='d-flex justify-content-center'>
+                <div className='d-flex justify-content-center img_row'>
+                   <img src={git} alt='' className='project_git_img img-fluid mx-auto' />
+                    <img src={dri} alt=''className='project_dri_img img-fluid mx-auto' />
+                    <img src={be} alt='' className='project_be_img img-fluid mx-auto' />
+                </div>
+                </div>
                </MDBContainer>
             </MDBContainer>
         

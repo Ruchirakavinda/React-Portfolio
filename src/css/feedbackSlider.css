@@ -21,7 +21,8 @@
   padding: 5%;
   background-color: #141414;
   border-radius: 20px;
-  border-bottom: 7px solid rgba(0, 153, 255, 0.767);
+  border-bottom: 10px solid rgba(0, 153, 255, 0.767);
+  border-top: 0.1px solid rgba(0, 153, 255, 0.767);
 }
 
 .user_mail {
@@ -37,6 +38,7 @@
     background-color: #141414;
     border-radius: 20px;
     border-bottom: 7px solid rgba(0, 153, 255, 0.767);
+    border-top: 0.1px solid rgba(0, 153, 255, 0.767);
   }
   .carousel .control-next.control-arrow::before {
     border-left: 8px solid #fff !important;
