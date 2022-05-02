@@ -2,7 +2,6 @@ import React from 'react';
 import '../css/graphicSlider.css';
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import uione from "../img/uione.png";
 import gr01 from "../img/gr01.jpg";
 import gr02 from "../img/gr02.png";
 import gr03 from "../img/gr03.png";
@@ -45,25 +44,25 @@ const responsive = {
 
   <div>
       <div className='uiux_crd'>
-      <img src={gr01} alt className='ui_crd_img'/>
+      <img src={gr01}  className='ui_crd_img'/>
       </div>
   </div>
 
   <div>
       <div className='uiux_crd'>
-      <img src={gr02} alt className='ui_crd_img'/>
+      <img src={gr02} alt="" className='ui_crd_img'/>
       </div>
   </div>
 
   <div>
       <div className='uiux_crd'>
-      <img src={gr03} alt className='ui_crd_img'/>
+      <img src={gr03} alt="" className='ui_crd_img'/>
       </div>
   </div>
 
   <div>
       <div className='uiux_crd'>
-      <img src={gr04} alt className='ui_crd_img'/>
+      <img src={gr04} alt="" className='ui_crd_img'/>
       </div>
   </div>
 

@@ -18,8 +18,12 @@ function About() {
                             <p className='aboutcont'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc hendrerit, ipsum condimentum ultricies vehicula, massa lorem tincidunt quam, at tincidunt libero enim ac leo. Maecenas eu nulla ornare, faucibus magna sit amet, ornare dolor. </p>
                     </MDBCol>
 
-                    <MDBCol md='12' lg='4'  className='aboutcol2' style={{textAlign:'center'}}>
+                    <MDBCol md='12' lg='4'  className='aboutcol2 d-flex justify-content-center align-items-center' style={{textAlign:'center'}}>
+                    <div className='contact_myimg_back_two'>
+                            <div className='contact_myimg_back'>
                       <img src={myimg} alt='My image' className='myimg mx-auto img-fluid'></img>
+                      </div>
+                      </div>
                     </MDBCol>
 
                     <MDBCol md='12' lg='4'  className='aboutcol3'>
