@@ -1,0 +1,125 @@
+@-webkit-keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.contact_main {
+  text-align: center;
+  position: fixed;
+  padding: 10vw;
+  width: 100%;
+  background: linear-gradient(-45deg, #000000, #001b39, #000000, #000000);
+  background-size: 500% 100%;
+  -webkit-animation: gradient 10s ease infinite;
+          animation: gradient 10s ease infinite;
+  bottom: 0;
+  top: 0;
+  color: white;
+}
+
+.contact_myimg_back {
+  background-color: rgba(32, 166, 255, 0.805);
+  border-radius: 50%;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 3px;
+}
+
+.contact_myimg_back_two {
+  background-color: rgba(32, 166, 255, 0);
+  border-radius: 50%;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 10px;
+  -webkit-box-shadow: 10px -10px 0px rgba(0, 153, 255, 0.767);
+          box-shadow: 10px -10px 0px rgba(0, 153, 255, 0.767);
+}
+
+.contact_myimg {
+  width: 230px;
+  border-radius: 50%;
+  margin-top: 0%;
+  -webkit-filter: grayscale(0%);
+          filter: grayscale(0%);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.contact_myimg:hover {
+  width: 230px;
+  border-radius: 50%;
+  margin-top: 0%;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.contact_name {
+  font-size: 50px;
+  font-weight: 700;
+  color: rgba(0, 153, 255, 0.767);
+  border-radius: 20px;
+  display: inline-block;
+}
+
+.contact_cont {
+  color: white;
+  padding-bottom: 3%;
+}
+
+.contact_iconone_cont {
+  text-align: left;
+  width: 100%;
+  font-size: 18px;
+  padding: 10px 0px;
+}
+
+.address {
+  margin: 20px;
+  padding-bottom: 20px;
+}
+
+@media screen and (max-width: 992px) {
+  .contact_name {
+    font-size: 50px;
+    font-weight: 700;
+    color: rgba(0, 153, 255, 0.767);
+    border-radius: 20px;
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+  }
+  .contact_cont {
+    color: white;
+    padding-bottom: 5%;
+    text-align: center;
+    width: 100%;
+  }
+  .contact_iconone_cont {
+    text-align: center;
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=contact.css.map */

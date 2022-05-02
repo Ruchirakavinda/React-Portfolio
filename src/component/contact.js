@@ -1,11 +1,54 @@
 import React from 'react';
-
+import '../css/contact.css';
+import { MDBContainer, MDBRow ,MDBCol } from 'mdb-react-ui-kit';
+import { Link } from 'react-router-dom';
+import myimg from '../img/myimg4.png';
 
 function Contact() {
     return(
-        <div style={{textAlign:'center',position:'fixed',padding:'5vw',width:'100%',backgroundColor:'black',bottom:'0',top:'0',color:'white'}}>
-            <h1>Contact Me</h1>
-         </div>
+        <>
+        
+        <MDBContainer fluid className='contact_main'>
+        <MDBContainer>
+                <MDBRow className='contactrow1' >
+                    
+                    <MDBCol sm='12' md='12' lg='6'  className='aboutcol3'>
+
+                        <div>
+                            <h1 className='contact_name' >Ruchira <span className='lname'>Kavinda</span></h1>
+                            <h5 className='contact_cont'>Interested In Full-Stack Development, UI / UX & Graphic Design </h5> 
+
+
+                            <div style={{textAlign:'center'}}>
+                            <div className='contact_iconone_cont' >
+                            <i class="fas fa-at"></i>
+                            <span className='address'>ruchirakvnd@gmail.com</span>
+                            </div>
+                            <div className='contact_iconone_cont' >
+                            <i class="fas fa-phone-volume"></i>
+                            <span className='address'>+94 71 0157 564</span>
+                            </div>
+                            <div className='contact_iconone_cont' >
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span className='address'>Sri Lanka, Uva Province, Ella.</span>
+                        </div>
+                        </div>
+
+                       </div>
+                    </MDBCol>
+
+                    <MDBCol sm='12' md='12' lg='6'   className='aboutcol2 d-flex justify-content-center align-items-center' style={{textAlign:'center'}}>
+                       <div className='contact_myimg_back_two'>
+                            <div className='contact_myimg_back'>
+                                <img src={myimg} alt='My image' className='contact_myimg mx-auto img-fluid'></img>
+                            </div>
+                        </div>
+                    </MDBCol>
+                    
+                </MDBRow>
+               </MDBContainer>
+        </MDBContainer>
+        </>
     );
 }
 
