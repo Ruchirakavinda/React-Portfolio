@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AAEA,AAAA,SAAS,CAAA;EACL,MAAM,EAAE,GAAG;EACX,UAAU,EAAE,MAAM;EAClB,aAAa,EAAE,IAAI;CACtB;;AAED,AAAA,WAAW,CAAA;EACP,KAAK,EAAE,IAAI;EACX,aAAa,EAAE,IAAI;CAEtB",
+    "sources": [
+        "uiuxSlider.scss",
+        "config.scss"
+    ],
+    "names": [],
+    "file": "uiuxSlider.css"
+}
