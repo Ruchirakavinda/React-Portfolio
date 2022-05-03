@@ -5,8 +5,10 @@ import { MDBLink } from 'mdbreact';
 
 
 function Footer() {
+
+  
     return(
-        <MDBContainer fluid className='footer'>
+        <MDBContainer fluid className='footer' id='footer'>
         
         
         <div className="social-icons ">
@@ -23,7 +25,7 @@ function Footer() {
          <span className='social'> <i className="fab fa-instagram fa-2x"></i></span> 
         </MDBLink>
        </div>
-       <span className='cright '>&copy; Copyright Ruchira Kavinda 2021</span>
+       <div className='cright ' id='copyright'>&copy; Copyright Ruchira Kavinda 2021</div>
 
        </MDBContainer>
 
