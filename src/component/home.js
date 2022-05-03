@@ -1,4 +1,6 @@
-import React from 'react';
+import React, {useEffect} from 'react';
+import Aos from "aos";
+import 'aos/dist/aos.css'; 
 import '../css/home.css';
 import { MDBCol, MDBContainer, MDBRow } from 'mdb-react-ui-kit';
 import q1 from '../img/q1.png';
@@ -9,6 +11,14 @@ import { Link } from 'react-router-dom';
 // import logo from '../img/logo.png'
 
 function Home() {
+
+   useEffect(()=>{
+      Aos.init({
+        duration:1000
+      })
+  
+    }, []);
+
     return(
        <div>
         <MDBContainer fluid className="main">
@@ -21,15 +31,15 @@ function Home() {
             {/* <div className="shine mx-auto">
                <img src={logo} className="logoimg"/>
                </div> */}
-            <div className=" home">
-                 <span className='iam'>Hi,  I'm </span>
-                 <h1 className='name'>Ruchira <span className='lname'>Kavinda</span></h1><p className='skill'>Interested In Full-Stack Development,<br/> UI / UX & Graphic Design</p>
+            <div className=" home" data-aos="fade-down" data-aos-once="true">
+                 <span className='iam' >Hi,  I'm </span>
+                 <h1 className='name' >Ruchira <span className='lname'>Kavinda</span></h1><p className='skill'>Interested In Full-Stack Development,<br/> UI / UX & Graphic Design</p>
 
               <hr className='hr1'/>
 
                  {/* <p className='info'>Management Information Systems Undergraduate (Special) At NSBM Green University Town, Sri Lanka.</p><br/> */}
 
-                <button className='cv mx-auto'>Download CV</button>
+                <button className='cv mx-auto' data-aos="fade-up" data-aos-once="true">Download CV</button>
                  
             </div>
             </MDBCol>
@@ -43,7 +53,7 @@ function Home() {
          <MDBContainer fluid className="main2" >
 
             <MDBContainer className='main2_cont01'>
-               <MDBRow>
+               <MDBRow data-aos="fade-up" data-aos-once="true">
                   <MDBCol className='Home_Quality ' lg='4' md='4' sm='4'>
                      <div className='d-flex justify-content-center'>
                         <div className='Home_Quality_Div d-flex align-items-center justify-content-center'>
@@ -78,13 +88,13 @@ function Home() {
          
             </MDBContainer>
 
-            <h1 className='Home_slog_One'>
+            <h1 className='Home_slog_One' data-aos="fade-up" data-aos-once="true">
                EXPAND THE LIFE <span style={{color:"rgba(0, 153, 255, 0.767)"}}>ONE PIXEL</span> AT A TIME
             </h1>
             
             <MDBContainer className='main2_cont02'>
 
-               <MDBRow>
+               <MDBRow data-aos="fade-up" data-aos-once="true">
                  <MDBCol className='Home_service_col d-flex justify-content-center' lg='6' md='12' sm='12' >
                     <div className='shaped_div_fs'></div>
                     <div className='shaped_div_two'></div>
@@ -98,7 +108,7 @@ function Home() {
                  </MDBCol>
                </MDBRow>
 
-               <MDBRow>
+               <MDBRow data-aos="fade-up" data-aos-once="true">
                  <MDBCol className='Home_service_col ' lg='6' md='12' sm='12' >
                  <h2 className='sub_topic'>UI / UX Design</h2>
                     <p className='cont'>Nulla occaecat in voluptate excepteur cupidatat incididunt ut anim dolor. Ex reprehenderit cillum id exercitation eu fugiat laborum adipisicing excepteur duis. Et nisi non proident cillum anim labore. Aliquip non anim ad quis incididunt cupidatat ut est reprehenderit in nisi. Aliquip labore ea laborum occaecat elit id veniam in sint magna esse laborum eu. Ullamco quis aliqua proident eiusmod ut cillum veniam ea voluptate.
@@ -112,7 +122,7 @@ function Home() {
                  </MDBCol>
                </MDBRow>
 
-               <MDBRow>
+               <MDBRow data-aos="fade-up" data-aos-once="true">
                  <MDBCol className='Home_service_col d-flex justify-content-center' lg='6' md='12' sm='12' >
                     <div className='shaped_div_gd'></div>
                     <div className='shaped_div_two'></div>
@@ -132,7 +142,7 @@ function Home() {
 
             <MDBContainer className='main2_cont01_mobile'>
 
-               <MDBRow>
+               <MDBRow data-aos="fade-up" data-aos-once="true">
                  <MDBCol className='Home_service_col' lg='6' md='12' sm='12' >
                  <h2 className='sub_topic_mob'>Full-Stack Development</h2>
                     <p className='cont_mob'>Nulla occaecat in voluptate excepteur cupidatat incididunt ut anim dolor. Ex reprehenderit cillum id exercitation eu fugiat laborum adipisicing excepteur duis. Et nisi non proident cillum anim labore. Aliquip non anim ad quis incididunt cupidatat ut est reprehenderit in nisi. Aliquip labore ea laborum occaecat elit id veniam in sint magna esse laborum eu. Ullamco quis aliqua proident eiusmod ut cillum veniam ea voluptate.
@@ -147,7 +157,7 @@ function Home() {
                </MDBRow>
 
 
-               <MDBRow>
+               <MDBRow data-aos="fade-up" data-aos-once="true">
                  <MDBCol className='Home_service_col' lg='6' md='12' sm='12' >
                  <h2 className='sub_topic_mob'>UI / UX Design</h2>
                     <p className='cont_mob'>Nulla occaecat in voluptate excepteur cupidatat incididunt ut anim dolor. Ex reprehenderit cillum id exercitation eu fugiat laborum adipisicing excepteur duis. Et nisi non proident cillum anim labore. Aliquip non anim ad quis incididunt cupidatat ut est reprehenderit in nisi. Aliquip labore ea laborum occaecat elit id veniam in sint magna esse laborum eu. Ullamco quis aliqua proident eiusmod ut cillum veniam ea voluptate.
@@ -161,7 +171,7 @@ function Home() {
                  </MDBCol>
                </MDBRow>
 
-               <MDBRow>
+               <MDBRow data-aos="fade-up" data-aos-once="true">
                  <MDBCol className='Home_service_col' lg='6' md='12' sm='12' >
                  <h2 className='sub_topic_mob'>Graphic Design</h2>
                     <p className='cont_mob'>Nulla occaecat in voluptate excepteur cupidatat incididunt ut anim dolor. Ex reprehenderit cillum id exercitation eu fugiat laborum adipisicing excepteur duis. Et nisi non proident cillum anim labore. Aliquip non anim ad quis incididunt cupidatat ut est reprehenderit in nisi. Aliquip labore ea laborum occaecat elit id veniam in sint magna esse laborum eu. Ullamco quis aliqua proident eiusmod ut cillum veniam ea voluptate.
@@ -179,7 +189,7 @@ function Home() {
          
             </MDBContainer>
 
-            <div className='Home_end_row'>
+            <div className='Home_end_row' data-aos="fade-up" data-aos-once="true">
                <h1 className='Home_end_slog'> <span style={{color:"rgba(0, 153, 255, 0.767)"}}>So</span>, Let's Get Started!</h1>
                <div className='d-flex justify-content-center' >
                   <Link to="/contact"><button className='contact_btn mx-auto'>Contact Me</button></Link>

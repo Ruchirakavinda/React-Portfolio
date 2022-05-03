@@ -8,9 +8,38 @@ import myimg from '../img/myimg4.png';
 import {NavLink } from 'react-router-dom';
 
 function Nav() {
+
+  
+  var prevScrollpos = window.pageYOffset;
+  window.onscroll = function() {
+  var currentScrollPos = window.pageYOffset;
+    if (prevScrollpos > currentScrollPos) {
+      //navbar
+      document.getElementById("navbar").style.top = "0";
+      document.getElementById("navbar").style.transition="0.5s";
+      //footer
+      document.getElementById("footer").style.bottom = "0";
+      document.getElementById("footer").style.transition="0.5s";
+
+      document.getElementById("copyright").style.bottom = "0";
+      document.getElementById("copyright").style.transition="0.5s";
+      
+    } else {
+      //navbar
+      document.getElementById("navbar").style.top = "-150px";
+      //footer
+      document.getElementById("footer").style.bottom = "-250px";
+
+      document.getElementById("copyright").style.bottom = "-250px";
+      
+      
+    }
+    prevScrollpos = currentScrollPos;
+  }
+
   return (
-    <header>
-      <div className='navbar1' >
+    <header >
+      <div className='navbar1' id='navbar'>
         <NavLink to='/ '>
           <img src={myimg} alt='Nav bar logo' className='navlogo'/>
         </NavLink>
