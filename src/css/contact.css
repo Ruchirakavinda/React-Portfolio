@@ -1,36 +1,12 @@
-@-webkit-keyframes gradient {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
-
-@keyframes gradient {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
-
 .contact_main {
   text-align: center;
   position: fixed;
-  padding: 10vw;
+  padding: 190px;
   width: 100%;
-  background: linear-gradient(-45deg, #000000, #001b39, #000000, #000000);
-  background-size: 500% 100%;
-  -webkit-animation: gradient 10s ease infinite;
-          animation: gradient 10s ease infinite;
+  background: -webkit-gradient(linear, left top, right top, color-stop(30%, rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url("../img/my5.jpg") center top;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.6) 30%, rgba(0, 0, 0, 0.6) 100%), url("../img/my5.jpg") center top;
+  background-size: cover;
+  background-attachment: fixed;
   bottom: 0;
   top: 0;
   color: white;
@@ -87,13 +63,14 @@
 .contact_cont {
   color: white;
   padding-bottom: 3%;
+  font-weight: 400;
 }
 
 .contact_iconone_cont {
   text-align: left;
   width: 100%;
   font-size: 18px;
-  padding: 10px 0px;
+  padding: 3px 0px;
 }
 
 .address {
@@ -101,7 +78,49 @@
   padding-bottom: 20px;
 }
 
+.contact_social_icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  margin-top: 10%;
+}
+
+.contact_social {
+  text-decoration: none;
+  color: white;
+  margin-right: 2rem;
+  opacity: 0.8;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.contact_social:hover {
+  text-decoration: none;
+  color: rgba(0, 153, 255, 0.767);
+  opacity: 1;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  margin-right: 2rem;
+}
+
 @media screen and (max-width: 992px) {
+  .contact_main {
+    text-align: center;
+    position: relative;
+    padding: 150px 0px 100px 0px;
+    width: 100%;
+    background: -webkit-gradient(linear, left top, right top, color-stop(30%, rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url("../img/my5.jpg") center top;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.6) 30%, rgba(0, 0, 0, 0.6) 100%), url("../img/my5.jpg") center top;
+    background-size: cover;
+    background-attachment: fixed;
+    bottom: 0;
+    top: 0;
+    color: white;
+  }
   .contact_name {
     font-size: 50px;
     font-weight: 700;
@@ -120,6 +139,102 @@
   .contact_iconone_cont {
     text-align: center;
     width: 100%;
+  }
+  .contact_social_icons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .contact_social {
+    text-decoration: none;
+    color: white;
+    margin: 1rem;
+    opacity: 0.8;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  .contact_social:hover {
+    text-decoration: none;
+    color: rgba(0, 153, 255, 0.767);
+    opacity: 1;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    margin-right: 2rem;
+  }
+  .contact_social_icons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 10%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .contact_myimg {
+    width: 150px;
+    border-radius: 50%;
+    margin-top: 0%;
+    -webkit-filter: grayscale(0%);
+            filter: grayscale(0%);
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  .contact_myimg:hover {
+    width: 150px;
+    border-radius: 50%;
+    margin-top: 0%;
+    -webkit-filter: grayscale(100%);
+            filter: grayscale(100%);
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  .contact_social_icons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 10%;
+  }
+  .address {
+    margin: 20px;
+    padding-bottom: 20px;
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .contact_main {
+    text-align: center;
+    position: relative;
+    padding: 120px 0px 50px 0px;
+    width: 100%;
+    background: -webkit-gradient(linear, left top, right top, color-stop(30%, rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url("../img/my5.jpg") center top;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.6) 30%, rgba(0, 0, 0, 0.6) 100%), url("../img/my5.jpg") center top;
+    background-size: cover;
+    background-attachment: fixed;
+    bottom: 0;
+    top: 0;
+    color: white;
   }
 }
 /*# sourceMappingURL=contact.css.map */
