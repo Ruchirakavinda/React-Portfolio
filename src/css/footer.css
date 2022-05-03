@@ -34,12 +34,16 @@
   color: white;
   margin-bottom: 0rem;
   opacity: 0.8;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .social:hover {
   text-decoration: none;
   color: rgba(0, 153, 255, 0.767);
   opacity: 1;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .cright {

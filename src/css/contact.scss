@@ -1,24 +1,13 @@
 @import './config.scss';
 
-@keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
-}
 .contact_main{
 text-align:center;
 position:fixed;
-padding:10vw;
+padding:190px;
 width:100%;
-background: linear-gradient(-45deg, #000000,rgb(0, 27, 57), #000000,  #000000);
-background-size: 500% 100%;
-animation: gradient 10s ease infinite;
+background: linear-gradient(to right ,rgba(0, 0, 0, 0.60) 30%,rgba(0, 0, 0, 0.60) 100%), url('../img/my5.jpg') center top;
+background-size: cover;
+background-attachment: fixed;
 bottom:0;
 top:0;
 color:white;
@@ -68,13 +57,14 @@ color:white;
 .contact_cont{
     color: white;
     padding-bottom: 3%;
+    font-weight: 400;
 }
 
 .contact_iconone_cont{
     text-align: left;
     width: 100%;
     font-size: 18px;
-    padding: 10px 0px;
+    padding: 3px 0px;
 }
 
 .address{
@@ -82,9 +72,44 @@ color:white;
     padding-bottom: 20px;
 }
 
+.contact_social_icons{
+    display: flex;
+    flex-flow: row wrap;
+    margin-top: 10%;
+}
+
+.contact_social
+{
+    text-decoration: none;
+    color: white;
+    margin-right: 2rem;
+    opacity: 0.8;
+    transition: 0.5s;
+}
+    
+.contact_social:hover
+{
+    text-decoration: none;
+    color:$blue;
+    opacity: 1;
+    transition: 0.5s;
+    margin-right: 2rem;
+}
+
 @media screen and (max-width: 992px)
 {
-
+    .contact_main{
+        text-align:center;
+        position: relative;
+        padding:150px 0px 100px 0px;
+        width:100%;
+        background: linear-gradient(to right ,rgba(0, 0, 0, 0.60) 30%,rgba(0, 0, 0, 0.60) 100%), url('../img/my5.jpg') center top;
+        background-size: cover;
+        background-attachment: fixed;
+        bottom:0;
+        top:0;
+        color:white;
+        }
     .contact_name{
         font-size: 50px;
         font-weight: 700;
@@ -105,4 +130,81 @@ color:white;
         text-align: center;
         width: 100%;
     }
+    .contact_social_icons{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+    .contact_social
+{
+    text-decoration: none;
+    color: white;
+    margin: 1rem;
+    opacity: 0.8;
+    transition: 0.5s;
 }
+    
+.contact_social:hover
+{
+    text-decoration: none;
+    color:$blue;
+    opacity: 1;
+    transition: 0.5s;
+    margin-right: 2rem;
+}
+.contact_social_icons{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin-bottom: 10%;
+}
+}
+
+@media screen and (max-width: 500px)
+{
+    .contact_myimg
+{
+    width:150px;
+    border-radius: 50%;
+    margin-top: 0%;
+    filter: grayscale(0%);
+    transition: 0.5s;
+    
+}
+.contact_myimg:hover
+{
+    width:150px;
+    border-radius: 50%;
+    margin-top: 0%;
+    filter: grayscale(100%);
+    transition: 0.5s;
+    
+}
+.contact_social_icons{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin-bottom: 10%;
+}
+.address{
+    margin: 20px;
+    padding-bottom: 20px;
+    font-size: 14px;
+}
+}
+
+@media screen and (max-width: 400px)
+{
+    .contact_main{
+        text-align:center;
+        position: relative;
+        padding:120px 0px 50px 0px;
+        width:100%;
+        background: linear-gradient(to right ,rgba(0, 0, 0, 0.60) 30%,rgba(0, 0, 0, 0.60) 100%), url('../img/my5.jpg') center top;
+        background-size: cover;
+        background-attachment: fixed;
+        bottom:0;
+        top:0;
+        color:white;
+        }
+    }
