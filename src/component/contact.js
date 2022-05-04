@@ -5,8 +5,10 @@ import '../css/contact.css';
 import { MDBContainer, MDBRow ,MDBCol } from 'mdb-react-ui-kit';
 import { Link } from 'react-router-dom';
 import myimg from '../img/myimg4.png';
+import ScrollToTop from '../ScrollToTop';
 
 function Contact() {
+    
 
     useEffect(()=>{
         Aos.init({
@@ -15,9 +17,11 @@ function Contact() {
     
       }, []);
 
+
+
     return(
         <>
-        
+        <ScrollToTop>
         <MDBContainer fluid className='contact_main'>
         <MDBContainer >
                 <MDBRow className='contactrow1 justify-content-center'>
@@ -76,6 +80,7 @@ function Contact() {
                 </MDBRow>
                </MDBContainer>
         </MDBContainer>
+        </ScrollToTop>
         </>
     );
 }

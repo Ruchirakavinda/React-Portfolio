@@ -7,6 +7,7 @@ import tech from '../img/tech.png';
 import { MDBContainer, MDBRow ,MDBCol } from 'mdb-react-ui-kit';
 import { Link } from 'react-router-dom';
 import DemoCarousel from './feedbackSlider';
+import ScrollToTop from '../ScrollToTop';
 
 
 function About() {
@@ -16,8 +17,11 @@ function About() {
         })
     
       }, []);
+
+
     return(
       <>
+      <ScrollToTop>
             <MDBContainer fluid className='aboutmain'>
               <MDBContainer>
                 <MDBRow className='aboutrow1' data-aos="fade-down" data-aos-once="true">
@@ -188,7 +192,7 @@ function About() {
 
            
             </MDBContainer>
-
+        </ScrollToTop>
        </>
     );
 }

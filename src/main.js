@@ -36,6 +36,7 @@ let flag=false;
         
         flag=false;
     }
+ 
 }
 
 export default togmenu;

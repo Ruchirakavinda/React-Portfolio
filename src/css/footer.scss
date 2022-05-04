@@ -35,6 +35,14 @@
     bottom: 1.5rem;
     right: 0.5%; 
   }
+  .social-icons-none {
+    display: none;
+    flex-flow: column wrap;
+    position: absolute;
+    bottom: 1.5rem;
+    right: 0.5%; 
+    
+  } 
   .social
   {
       text-decoration: none;
@@ -43,7 +51,15 @@
       opacity: 0.8;
       transition: 0.5s;
   }
-      
+  .social_none
+  {
+      display: none;
+      text-decoration: none;
+      color: white;
+      margin-bottom: 0rem;
+      opacity: 0.8;
+      transition: 0.5s;
+  }   
   .social:hover
   {
       text-decoration: none;

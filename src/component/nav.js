@@ -3,7 +3,7 @@ import '../css/nav.css';
 import togmenu from '../main.js';
 import nav1 from '../img/nav1.jpg';
 import nav2 from '../img/nav2.jpg';
-
+import SocialHide from './socialHide.js';
 import myimg from '../img/myimg4.png';
 import {NavLink } from 'react-router-dom';
 
@@ -39,9 +39,9 @@ function Nav() {
 
   return (
     <header >
-      <div className='navbar1' id='navbar'>
+      <div className='navbar1' id='navbar' onClick={SocialHide}>
         <NavLink to='/ '>
-          <img src={myimg} alt='Nav bar logo' className='navlogo'/>
+          <img src={myimg} alt='Nav bar logo' className='navlogo' />
         </NavLink>
         
        
