@@ -7,6 +7,7 @@ import q1 from '../img/q1.png';
 import q2 from '../img/q2.png';
 import q3 from '../img/q3.png';
 import { Link } from 'react-router-dom';
+import ScrollToTop from '../ScrollToTop';
 
 // import logo from '../img/logo.png'
 
@@ -19,7 +20,10 @@ function Home() {
   
     }, []);
 
+ 
+
     return(
+       <ScrollToTop>
        <div>
         <MDBContainer fluid className="main">
         <MDBRow>
@@ -198,6 +202,7 @@ function Home() {
 
          </MDBContainer>
          </div>
+         </ScrollToTop>
     );
 }
 

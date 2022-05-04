@@ -10,6 +10,7 @@ import DevelopmentSlider from './developmentSlider';
 import UiuxSlider from './uiuxSlider';
 import GraphicSlider from './graphicSlider';
 import { Link } from 'react-router-dom';
+import ScrollToTop from '../ScrollToTop';
 
 function Project() {
 
@@ -19,9 +20,11 @@ function Project() {
         })
     
       }, []);
+
+
     return(
         <>
-
+        <ScrollToTop>
         <MDBContainer fluid className='project_main'>
               <MDBContainer data-aos="fade-down" data-aos-once="true" >
                 <MDBRow>
@@ -91,9 +94,7 @@ function Project() {
             </div>
 
             </MDBContainer>
-        
-          
-
+            </ScrollToTop>
         </>
     );
 }

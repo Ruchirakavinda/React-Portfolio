@@ -29,7 +29,28 @@
   right: 0.5%;
 }
 
+.social-icons-none {
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  position: absolute;
+  bottom: 1.5rem;
+  right: 0.5%;
+}
+
 .social {
+  text-decoration: none;
+  color: white;
+  margin-bottom: 0rem;
+  opacity: 0.8;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.social_none {
+  display: none;
   text-decoration: none;
   color: white;
   margin-bottom: 0rem;
