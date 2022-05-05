@@ -24,9 +24,18 @@ const responsive = {
           slidesToSlide: 1 // optional, default to 1.
         }
       };
+
+
+      const uiux = [
+        {
+          "id":"01",
+          "img":"uione.png",
+        },
+      ];
       
     return(
       <>
+
 
 
 <Carousel
@@ -38,32 +47,18 @@ const responsive = {
   autoPlay={true}
   autoPlaySpeed={10000}
 >
+{
+  uiux.map((u)=>
 
   <div>
-      <div className='uiux_crd'>
-      <img src={uione} alt className='ui_crd_img'/>
+      <div className='uiux_crd' key={u.id}>
+      <img src={require("../../public/project_imgs/"+u.img)} alt className='ui_crd_img'/>
       </div>
   </div>
-
-  <div>
-      <div className='uiux_crd'>
-      <img src={uione} alt className='ui_crd_img'/>
-      </div>
-  </div>
-
-  <div>
-      <div className='uiux_crd'>
-      <img src={uione} alt className='ui_crd_img'/>
-      </div>
-  </div>
-
-  <div>
-      <div className='uiux_crd'>
-      <img src={uione} alt className='ui_crd_img'/>
-      </div>
-  </div>
-
   
+  )
+
+}
 
 
 </Carousel>
