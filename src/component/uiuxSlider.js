@@ -2,7 +2,7 @@ import React from 'react';
 import '../css/uiuxSlider.css';
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import uione from "../img/uione.png";
+import uione from "../img/uiux/uione.png";
 
 function UiuxSlider() {
 
@@ -26,12 +26,11 @@ const responsive = {
       };
 
 
-      const uiux = [
-        {
-          "id":"01",
-          "img":"uione.png",
-        },
-      ];
+      function importAll(r) {
+        return r.keys().map(r);
+      }
+      const images = importAll(require.context('../img/uiux', false, /\.(png|jpe?g|svg)$/));
+
       
     return(
       <>
@@ -48,11 +47,11 @@ const responsive = {
   autoPlaySpeed={10000}
 >
 {
-  uiux.map((u)=>
+  images.map((u)=>
 
-  <div>
-      <div className='uiux_crd' key={u.id}>
-      <img src={require("../../public/project_imgs/"+u.img)} alt className='ui_crd_img'/>
+  <div key={u.default}>
+      <div className='uiux_crd' >
+      <img src={u.default}  alt={u.default} className='ui_crd_img'/>
       </div>
   </div>
   

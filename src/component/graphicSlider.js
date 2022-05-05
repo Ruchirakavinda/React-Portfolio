@@ -2,10 +2,7 @@ import React from 'react';
 import '../css/graphicSlider.css';
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import gr01 from "../img/gr01.jpg";
-import gr02 from "../img/gr02.png";
-import gr03 from "../img/gr03.png";
-import gr04 from "../img/gr04.png";
+
 
 function GraphicSlider() {
 
@@ -27,7 +24,13 @@ const responsive = {
           slidesToSlide: 1 // optional, default to 1.
         }
       };
+    
+
       
+      function importAll(r) {
+        return r.keys().map(r);
+      }
+      const images = importAll(require.context('../img/graphic', false, /\.(png|jpe?g|svg)$/));
     return(
       <>
 
@@ -42,29 +45,37 @@ const responsive = {
   autoPlaySpeed={10000}
 >
 
-  <div>
-      <div className='uiux_crd'>
-      <img src={gr01}  className='ui_crd_img'/>
+{
+
+  images.map((g)=>
+
+  <div key={g.default}>
+      <div className='uiux_crd' >
+      <img src={g.default} alt={g.default} className='ui_crd_img'/>
       </div>
+     
   </div>
 
-  <div>
-      <div className='uiux_crd'>
-      <img src={gr02} alt="" className='ui_crd_img'/>
-      </div>
-  </div>
+  )
 
-  <div>
-      <div className='uiux_crd'>
-      <img src={gr03} alt="" className='ui_crd_img'/>
-      </div>
-  </div>
+}
+  {/* // <div>
+  //     <div className='uiux_crd'>
+  //     <img src={gr02} alt="" className='ui_crd_img'/>
+  //     </div>
+  // </div>
 
-  <div>
-      <div className='uiux_crd'>
-      <img src={gr04} alt="" className='ui_crd_img'/>
-      </div>
-  </div>
+  // <div>
+  //     <div className='uiux_crd'>
+  //     <img src={gr03} alt="" className='ui_crd_img'/>
+  //     </div>
+  // </div>
+
+  // <div>
+  //     <div className='uiux_crd'>
+  //     <img src={gr04} alt="" className='ui_crd_img'/>
+  //     </div>
+  // </div> */}
 
   
 

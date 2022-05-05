@@ -39,9 +39,9 @@ function Project() {
                
                <div className='d-flex justify-content-center' data-aos="fade-down" data-aos-once="true">
                     <div className='d-flex justify-content-center img_row'>
-                        <img src={git} alt='' className='project_git_img img-fluid mx-auto' onClick={() => {window.location.href="https://github.com/Ruchirakavinda"}} />
-                        <img src={dri} alt=''className='project_dri_img img-fluid mx-auto' onClick={() => {window.location.href="https://dribbble.com/ruchirakvnd"}}  />
-                        <img src={be} alt='' className='project_be_img img-fluid mx-auto' onClick={() => {window.location.href="https://www.behance.net/ruchirakavinda"}}/>
+                        <img src={git} alt='gihub' className='project_git_img img-fluid mx-auto' onClick={() => {window.location.href="https://github.com/Ruchirakavinda"}} />
+                        <img src={dri} alt='dribble'className='project_dri_img img-fluid mx-auto' onClick={() => {window.location.href="https://dribbble.com/ruchirakvnd"}}  />
+                        <img src={be} alt='behance' className='project_be_img img-fluid mx-auto' onClick={() => {window.location.href="https://www.behance.net/ruchirakavinda"}}/>
                     </div>
                </div>
             </MDBContainer>
