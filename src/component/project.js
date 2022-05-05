@@ -49,40 +49,44 @@ function Project() {
             <MDBContainer fluid className='projectrow2'>
             <h1 className='About_main_topic' data-aos="fade-up" data-aos-once="true">PROJECTS</h1>
 
-            <div style={{marginTop:'50px'}}>
-            <h2 className='sub_topic' style={{textAlign:'center'}} data-aos="fade-up" data-aos-once="true">Development Projects</h2>
-            <div className='d-flex justify-content-center'>
-            <p className='project_cont' style={{width:'70%'}} data-aos="fade-up" data-aos-once="true">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc hendrerit, ipsum condimentum ultricies vehicula, massa lorem tincidunt quam, at tincidunt libero enim ac leo. Maecenas eu nulla ornare, faucibus magna sit amet, ornare dolor.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc hendrerit, ipsum condimentum ultricies vehicula,  </p> 
+            <div>
+                <div style={{marginTop:'50px'}} className='project_cont_box' >
+                    <h2 className='sub_topic' style={{textAlign:'center'}} data-aos="fade-up" data-aos-once="true">Development Projects</h2>
+                    <div className='d-flex justify-content-center'>
+                    <p className='project_cont' style={{width:'70%'}} data-aos="fade-up" data-aos-once="true">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc hendrerit, ipsum condimentum ultricies vehicula, massa lorem tincidunt quam, at tincidunt libero enim ac leo. Maecenas eu nulla ornare, faucibus magna sit amet, ornare dolor.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc hendrerit, ipsum condimentum ultricies vehicula,  </p> 
+                    </div>
+                </div>
+                <div data-aos="fade-up" data-aos-once="true">
+                <DevelopmentSlider/>
+                </div>
             </div>
+            
 
-            <div data-aos="fade-up" data-aos-once="true">
-            <DevelopmentSlider/>
-            </div>
-            </div>
-
-
-            <div style={{marginTop:'120px'}}>
-            <h2 className='sub_topic' style={{textAlign:'center'}} data-aos="fade-up" data-aos-once="true">UI / UX Projects</h2>
-            <div className='d-flex justify-content-center'>
-            <p className='project_cont' style={{width:'70%'}} data-aos="fade-up" data-aos-once="true">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc hendrerit, ipsum condimentum ultricies vehicula, massa lorem tincidunt quam, at tincidunt libero enim ac leo. Maecenas eu nulla ornare, faucibus magna sit amet, ornare dolor.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc hendrerit, ipsum condimentum ultricies vehicula,  </p> 
-            </div>
-
-            <div  data-aos="fade-up" data-aos-once="true">
-            <UiuxSlider/>
-            </div>
+            <div>
+                <div className='project_cont_box' >
+                    <h2 className='sub_topic' style={{textAlign:'center'}} data-aos="fade-up" data-aos-once="true">UI / UX Projects</h2>
+                    <div className='d-flex justify-content-center'>
+                    <p className='project_cont' style={{width:'70%'}} data-aos="fade-up" data-aos-once="true">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc hendrerit, ipsum condimentum ultricies vehicula, massa lorem tincidunt quam, at tincidunt libero enim ac leo. Maecenas eu nulla ornare, faucibus magna sit amet, ornare dolor.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc hendrerit, ipsum condimentum ultricies vehicula,  </p> 
+                    </div>
+                </div>
+                <div  data-aos="fade-up" data-aos-once="true">
+                <UiuxSlider/>
+                </div>
             </div>
 
 
             
-            <div style={{marginTop:'120px'}}>
-            <h2 className='sub_topic' style={{textAlign:'center'}}  data-aos="fade-up" data-aos-once="true">Graphic Designs</h2>
-            <div className='d-flex justify-content-center'>
-            <p className='project_cont' style={{width:'70%'}}  data-aos="fade-up" data-aos-once="true">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc hendrerit, ipsum condimentum ultricies vehicula, massa lorem tincidunt quam, at tincidunt libero enim ac leo. Maecenas eu nulla ornare, faucibus magna sit amet, ornare dolor.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc hendrerit, ipsum condimentum ultricies vehicula,  </p> 
-            </div>
+            <div>
+                <div className='project_cont_box' >
+                    <h2 className='sub_topic' style={{textAlign:'center'}}  data-aos="fade-up" data-aos-once="true">Graphic Designs</h2>
+                    <div className='d-flex justify-content-center'>
+                    <p className='project_cont' style={{width:'70%'}}  data-aos="fade-up" data-aos-once="true">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc hendrerit, ipsum condimentum ultricies vehicula, massa lorem tincidunt quam, at tincidunt libero enim ac leo. Maecenas eu nulla ornare, faucibus magna sit amet, ornare dolor.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc hendrerit, ipsum condimentum ultricies vehicula,  </p> 
+                    </div>
+                </div>
 
-            <div  data-aos="fade-up" data-aos-once="true">
-            <GraphicSlider/>
-            </div>
+                <div  data-aos="fade-up" data-aos-once="true">
+                <GraphicSlider/>
+                </div>
             </div>
 
 
