@@ -115,8 +115,8 @@ const develop =[
 
 develop.map(
     (d) => 
-  <div>
-      <div className='dev_crd' key={d.id}>
+  <div key={d.id}>
+      <div className='dev_crd' >
           <h1 className='crdtopic'>{d.topic}</h1>
           <p className='aboutcont'>{d.content}</p>
           <div className='d-flex justify-content-center'>
